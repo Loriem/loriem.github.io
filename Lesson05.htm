@@ -1,0 +1,160 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Занятие 5. Работа со звуком в Reaper</title>
+                    <link rel="stylesheet" href="Lesson05_files/main.4710.min.css">
+    </head>
+    <body class="vsc-initialized">
+        <div class="wrapper">
+                <div class="content-wrapper page-wrapper page-wrapper--bottom">
+        <div class="title">Занятие 5. Работа со звуком в Reaper</div>
+        <h4 class="md__title md__title_fourth">Содержание</h4>
+<div class="md__list">
+<div class="md__list-elem">Импорт с Media Explorer</div>
+<div class="md__list-elem">Монтаж аудио, Locking, Fade&amp;Crossfades</div>
+<div class="md__list-elem">Запись аудио. Подготовка трека и мониторинг</div>
+<div class="md__list-elem">Выравнивание тайминга и ритмики аудио файлов в Reaper</div>
+<div class="md__list-elem">Работа с темпом</div>
+<div class="md__list-elem">Redner и Freeze</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Импорт с Media Explorer</h1>
+<div class="md__paragraph">При импорте в Reaper попадает ссылка на файл, все операции не деструктивны (оригинал остается не тронутым)</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson05_files/VEstY9lB4y.gif" alt="Импорт с Media Explorer"></div>
+<div class="md__paragraph">Можно  прослушать аудио, сразу с привязкой к темпу проекта. Для этого выбираем в Explorer режим Tempo Match On.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson05_files/9nMDd1vKLW.png" alt="2026-02-04_12-07-40 (2)"></div>
+<div class="md__paragraph">1 - вставить файл на трек (можо просто перетянуть из окна прослушивания весь файл или выделенный участок)</div>
+<div class="md__paragraph">2 - автоматическое воспроизведение выбранного файла</div>
+<div class="md__paragraph">3 - прослушивание с начала такта</div>
+<div class="md__paragraph">4 - определить высоту звука (питч)</div>
+<div class="md__paragraph">5 - включить - выключить блок информации о файле (справа внизу)</div>
+<div class="md__paragraph">6 - играть в темпе</div>
+<div class="md__paragraph">7 - играть в удвоенном темпе</div>
+<div class="md__paragraph">8 - играть в два раза медленнее</div>
+<div class="md__paragraph">9 - не менять высоту при ускорении - замедлении</div>
+<div class="md__paragraph">10 - перенести Explorer  в док</div>
+<div class="md__paragraph">Демонстрация привязки к темпу и прослушиванию через выбранный трек:</div>
+<iframe src="Lesson05_files/1161839510.htm" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width:1200;height:800;"></iframe>
+<hr>
+<h1 class="md__title md__title_first">Монтаж аудио. Фейды и кросфейды. Запрет изменений</h1>
+<div class="md__paragraph">Разрезать Item или все выделенные Items - S, Shift+S разрезает по области Time Slection (сразу с двух сторон)</div>
+<div class="md__paragraph">Доступны все возможные инструменты для 
+редакции аудио, для удобства можно привязать действия к сетке 
+(Snap&amp;Grid) - то есть например перемещение будет привязано к шагу, 
+которое мы указываем в настройках сетки.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson05_files/613196bd24a8de7d7f542f7bd469405fe9f89772.gif" alt=""></div>
+<h3 class="md__title md__title_third">Fade &amp; Crossfade</h3>
+<h4 class="md__title md__title_fourth">Доступно несколько режимов Fade и
+ Crossfade, также полезно использовать разное отображение items при 
+пересечении и автоматический кроссфейд, при двойном клике ЛКМ на фейд 
+откроется редактор для более точной настройки Фрейдов: <a class="link md__link" href="https://disk.yandex.ru/i/HKDy4sDKhpw-jw">https://disk.yandex.ru/i/HKDy4sDKhpw-jw</a></h4>
+<div class="md__paragraph">![Fade](/Users/archi/Yandex.Disk.localized/profileschool/Reaper2025/Конспекты 2026/5/Fade.gif)</div>
+<h3 class="md__title md__title_third">Функция Locking</h3>
+<div class="md__paragraph">Это функция запрещающая изменения операция - причем мы сами можем выбрать что именно "залочить"</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson05_files/5cedb12fb6426.gif" alt=""></div>
+<hr>
+<h1 class="md__title md__title_first">Запись аудио в Reaper. Подготовка трека и мониторинг. Метроном</h1>
+<div class="md__paragraph">Перед началом записи нужно выбрать трек, 
+нажать на нем кнопку записи, выбрать вход. и старт записи CTRL+R либо 
+кнопка записи на панели Transport</div>
+<div class="md__paragraph">При этом индикатор будет отображать уровень входа.</div>
+<h3 class="md__title md__title_third">Мониторинг</h3>
+<div class="md__paragraph">Для того чтобы слышать результирующий звук (с
+ обработками на треке) необходимо активировать режим мониторинга, для 
+комфортной работы необходимо чтобы значение Latensy было как можно 
+меньше.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson05_files/OV4Et6FwkH.png" alt="2026-02-04_13-48-17"></div>
+<div class="md__paragraph">Мониторинг может быть в трех состояниях - 
+выключен, включен и авто режим (не слышим уже записанные Items). 
+Состояния переключаются последовательно той же кнопкой на треке или в 
+микшере.</div>
+<h3 class="md__title md__title_third">Метроном</h3>
+<div class="md__paragraph">Вы можете настроить и использовать метроном при записи в REAPER. Включить его можно кнопкой на основной панели (Main Toolbar)</div>
+<div class="md__paragraph">Если нажать на нее ПКМ то откроется окно настроек метронома:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson05_files/HKqJyv67TX.jpg" alt="2026-02-04_14-04-17"></div>
+<hr>
+<h1 class="md__title md__title_first">Режимы записи</h1>
+<div class="md__paragraph">Reaper позволяет выбрать следующие варианты записи: </div>
+<div class="md__paragraph"><img class="md__img" src="Lesson05_files/Q1jybx8Xpe.jpg" alt="2026-02-04_13-43-53"></div>
+<div class="md__list md__list_ordered">
+<div class="md__list-elem">Record Normal - линеный стандартный режим</div>
+<div class="md__list-elem">Time Selection Auto Punch - записывается только выбранный участок времени</div>
+<div class="md__list-elem">Auto Punch Selected Items - переписывается выбранный фрагмент Item</div>
+</div>
+<div class="md__paragraph">Раздел Overlapping recording behavior определяет как Items будут располагаться на треке</div>
+<hr>
+<h1 class="md__title md__title_first">Компиляция дублей</h1>
+<div class="md__list">
+<div class="md__list-elem">Удачные дубли выбираются  <span class="md__strong">CTRL+ ЛКМ</span> либо клавишей <span class="md__strong">T</span> (переход между фрагментами).</div>
+<div class="md__list-elem">После выбора если необходимо мы можем удалить ненужные фрагменты   функцией <span class="md__strong">Take - Crop to active take</span>.</div>
+<div class="md__list-elem">Объединить  все фрагменты в один новый файл функцией <span class="md__strong">Glue</span>.</div>
+<div class="md__list-elem">Фунция <span class="md__strong">Lock to active take</span> закрепляет выделение, чтобы случайно не изменить уже выделенные фрагменты.</div>
+</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson05_files/Ro8fCzLTdD.gif" alt=""></div>
+<div class="md__paragraph">Также полезна функция <span class="md__strong">Comp</span> - мы можем сохранять разные варианты подборок фрагментов и выбирать между ними  - это экономит массу времени в работе.</div>
+<div class="md__paragraph">При записи в режиме Add Lane- каждый дубль 
+будет записан на свой слой (Lane). Можно выбрать нужный дубль включив 
+соответствующий Lane.</div>
+<div class="md__paragraph">Выбрав режим компиляции (ПКМ) можно редактировать дубли и  отбирать нужные части в компиляцию из разных дублей:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson05_files/W66I7OvMgG.gif" alt="Lane Compilation"></div>
+<hr>
+<h1 class="md__title md__title_first">Очистка проекта от лишних файлов</h1>
+<div class="md__paragraph">Все файлы которы были записаны находятся на 
+жестком диске. Удаленные из аранжировки файлы не удаляются с жесткого 
+диска (по умолчанию). Для очистки можно использовать команду  File - 
+Clean Current Project Directory:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson05_files/yqAJVNho2D.gif" alt="Clean"></div>
+<div class="md__paragraph"><span class="md__strong">ВАЖНО!</span> Перед 
+записью желательно сохранить проект в конкретную папку, чтобы все медиа 
+разных проектов не находились в одной папке. Иначе мы можем почистить 
+файлы необходимые для других проектов Reaper. Тоесть после запуска 
+reaper лучше сразу созранить проект в конкретной папке, чтобы записанные
+ файлы находились в этой папке проекта.</div>
+<div class="md__paragraph">Все медиа, эффекты, Items автоматизации и  группы проекта находятся в меню Project Bay (открвается через меню View либо CTRL+B)</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson05_files/WM6wVTF9ep.gif" alt="Project bay"></div>
+<hr>
+<h1 class="md__title md__title_first">Выравнивание тайминга и ритмики аудио файлов в Reaper</h1>
+<h3 class="md__title md__title_third">Time Stretch Marker и его применение</h3>
+<div class="md__paragraph">Данный маркер позволяет растянуть или 
+ускорить часть файла, применяется для выравнивания либо синхронизации 
+тайминга. Создается Shift+w либо OPT+CMD+ЛКМ.</div>
+<div class="md__paragraph">Работа с одним Item:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson05_files/UG3fX2wWcr.gif" alt="Stretch"></div>
+<div class="md__paragraph">Работа с группой Items (выравнивание 
+барабанов): можно выделить все нужные Items либо сразу их сгруппировать 
+(g), Когда Items  в группе нет необходимости постоянно выделять их все.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson05_files/jIxWcpIheQ.gif" alt="Stretch Group"></div>
+<hr>
+<h1 class="md__title md__title_first">Работа с темпом</h1>
+<div class="md__paragraph"><span class="md__strong">Нужно определить темп композиции, в Reaper уже есть  как минимум два варианта:</span></div>
+<div class="md__paragraph">1. функция TAP на транспорт панели (просто кликаем мышкой)</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson05_files/ctynohe9Ae.png" alt=""></div>
+<div class="md__paragraph">2. Выделяем 1 такт композиции и из основного меню Insert  - Measure from time selection (Detect Tempo) </div>
+<h3 class="md__title md__title_third">Подгоняем темп под исполнение</h3>
+<div class="md__paragraph"><span class="md__strong">А что делать если исполнение было не под метроном и нам нужно подогнать не исполнение под сетку а наоборот?</span></div>
+<div class="md__paragraph">1. Открываем огибающую темпа (Alt+T)</div>
+<div class="md__paragraph">2. Ставим темпо маркеры с CTRL + ЛКМ в нужных местах (начала тактов, либо где отклонение от текущей сетки)</div>
+<div class="md__paragraph">3. Тащим сетку в нужное место удерживая CTRL (CMD на Mac)</div>
+<div class="md__paragraph">При этом в свойствах Item нужно указать режим Time иначе они будут стретчится </div>
+<div class="md__paragraph"><img class="md__img" src="Lesson05_files/U88F6QsUsh.png" alt=""></div>
+<div class="md__paragraph">Вся процедура выглядит так </div>
+<div class="md__paragraph"><img class="md__img" src="Lesson05_files/jsL1ZZ8Z4t.gif" alt=""></div>
+<div class="md__paragraph">ПКМ по огибающей открывает варианты ее формы </div>
+<hr>
+<h1 class="md__title md__title_first">Redner и Freeze</h1>
+<div class="md__list">
+<div class="md__list-elem">Применение Redner и Freeze - рендер файлов (с применением эффекта) - разгрузка CPU и памяти</div>
+<div class="md__list-elem">Применяется как к аудио так и к миди материалу, в итоге мы слышим результат обработки но процессор обработка не нагружает.</div>
+<div class="md__list-elem">В любой момент мы можем выполнить Unfreeze  если нам необходимо отредактировать исходные параметры эффекта.</div>
+</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson05_files/YuMOEKMot7.gif" alt=""></div>
+<div class="md__paragraph">Bounce in place - это рендер нужной области 
+выбранного трека прямо в проект, рекомендую использовать два экшна: 
+SWS/AW: Render tracks to mono stem tracks, obeying time selection и 
+SWS/AW: Render tracks to stereo stem tracks, obeying time selection для 
+моно и стерео соответственно. </div>
+<div class="md__paragraph">Работает как для миди так и для аудио треков</div>
+<div class="md__paragraph">При назначении на горячую главишу или кнопку на панели вся процедура занимает 1 клик:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson05_files/koY8NlbqCv.gif" alt="Bounce in place"></div>
+    </div>
+                    </div>
+</body></html>
