@@ -1,0 +1,539 @@
+<html><head>
+        <title>Adobe Photoshop: современная обработка изображений, занятие №10</title>
+                    <link rel="stylesheet" href="Lesson%2010_files/main.4708.min.css">
+    </head>
+    <body class="vsc-initialized">
+        <div class="wrapper">
+                            
+                <div class="content-wrapper page-wrapper page-wrapper--bottom">
+        <div class="title">Adobe Photoshop: современная обработка изображений, занятие №10</div>
+        <h2 class="md__title md__title_second">Содержание</h2>
+<div class="md__list">
+<div class="md__list-elem">Режимы наложения: базовая идея и группы</div>
+<div class="md__list-elem">Затемняющие и осветляющие: «братья» и нейтральные цвета</div>
+<div class="md__list-elem">Darken и Lighten</div>
+<div class="md__list-elem">Multiply и Screen</div>
+<div class="md__list-elem">Color Burn / Color Dodge и Linear Burn / Linear Dodge</div>
+<div class="md__list-elem">Контрастные режимы: нейтральный 50% серый</div>
+<div class="md__list-elem">Как режимы наложения работают по каналам</div>
+<div class="md__list-elem">Hue / Saturation / Color / Luminosity (HSB‑логика)</div>
+<div class="md__list-elem">Lighten vs Lighter Color и Darken vs Darker Color</div>
+<div class="md__list-elem">4 глобальных случая применения режимов наложения</div>
+<div class="md__list-elem">Практика: быстрые вклейки без обтравки (Lighten/Darken)</div>
+<div class="md__list-elem">Практика: Screen для светящихся эффектов</div>
+<div class="md__list-elem">Практика: Multiply как «печать принтера»</div>
+<div class="md__list-elem">Практика: перенос теней на новый фон через Multiply</div>
+<div class="md__list-elem">Практика: замены/добавления неба (облаков)</div>
+<div class="md__list-elem">Практика: прозрачные объекты (стекло) и Hard Light</div>
+<div class="md__list-elem">Сделать натюрморт «более картинным» (текстура стены)</div>
+<div class="md__list-elem">Локальные правки объектов</div>
+<div class="md__list-elem">Общая тонировка</div>
+<div class="md__list-elem">Режимы наложения, которые почти не используются</div>
+<div class="md__list-elem">Самостоятельное изучение</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Режимы наложения: базовая идея и группы</h1>
+<h3 class="md__title md__title_third">Что такое режим наложения</h3>
+<div class="md__paragraph">Режим наложения задаёт, <span class="md__strong">как показывать пиксели слоя</span> и <span class="md__strong">по какой формуле смешивать их</span> с нижележащим изображением (по принципу смешивания красок с тем, что лежит ниже).</div>
+<h3 class="md__title md__title_third">Важное свойство</h3>
+<div class="md__paragraph">Большинство режимов наложения (кроме группы Hue/Saturation/Color/Luminosity) <span class="md__strong">работают по-канально</span>: отдельно с чёрно‑белой картинкой в каждом канале.</div>
+<h3 class="md__title md__title_third">Основные группы</h3>
+<div class="md__paragraph">Режимы наложения делятся на группы (в списке Photoshop они разделены черточками):</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_kHcIIgusr8.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Затемняющие</span> — затемняют изображение.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_i4T3rvXrjg.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Осветляющие</span> — осветляют изображение.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_7m3PfsCUc4.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Контрастные</span> — одновременно могут затемнять и осветлять.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_YAxBkdeZLh.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Технические</span> — используются для «болванок» под маски, математических задач, внутренней техники.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_sMeFKiSC6x.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">HSB/«яркосноцветная» группа</span> — Hue / Saturation / Color / Luminosity: работают не по RGB‑каналам, а по другой логике.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_gntUoosucm.png" alt=""></div>
+</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Затемняющие и осветляющие: «братья» и нейтральные цвета</h1>
+<h3 class="md__title md__title_third">Пары «затемнение ↔ осветление»</h3>
+<div class="md__paragraph">В затемняющей группе каждый режим имеет «брата‑близнеца» в осветляющей группе:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Darken ↔ Lighten</span></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Multiply ↔ Screen</span></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Color Burn ↔ Color Dodge</span></div>
+</div>
+<div class="md__list-elem"><span class="md__strong">Linear Burn ↔ Linear Dodge</span></div>
+</div>
+<div class="md__paragraph">Они построены по одному принципу, но действуют в противоположную сторону.</div>
+<h3 class="md__title md__title_third">Нейтральные (невидимые) цвета</h3>
+<div class="md__paragraph">У каждой из групп есть «нейтральный» цвет, который не оказывает эффекта:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Для <span class="md__strong">затемняющей группы</span> нейтральный цвет — <span class="md__strong">белый</span> (255,255,255). Белый «не умеет затемнять».</div>
+</div>
+<div class="md__list-elem">Для <span class="md__strong">осветляющей группы</span> нейтральный цвет — <span class="md__strong">чёрный</span> (0,0,0). Чёрный «не умеет осветлять».</div>
+</div>
+<div class="md__paragraph">Любое отклонение от нейтрального на 1 тоновый уровень уже начинает работать (например, 254 вместо 255).</div>
+<hr>
+<h1 class="md__title md__title_first">Darken и Lighten</h1>
+<h3 class="md__title md__title_third">Lighten</h3>
+<div class="md__paragraph"><span class="md__strong">Lighten</span> показывает те пиксели, которые <span class="md__strong">светлее</span> при сравнении пикселей текущего слоя и нижележащего изображения.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_se3EKFXArG.jpg" alt=""></div>
+<h3 class="md__title md__title_third">Darken</h3>
+<div class="md__paragraph"><span class="md__strong">Darken</span> показывает те пиксели, которые <span class="md__strong">темнее</span> при сравнении пикселей текущего слоя и нижележащего изображения.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/sY1U4aCR38.jpg" alt=""></div>
+<h3 class="md__title md__title_third">Предназначение</h3>
+<div class="md__paragraph">Это режимы для быстрых «вклеек» <span class="md__strong">без обтравки</span>, когда совпало соотношение «объект светлее/темнее фона».</div>
+<hr>
+<h1 class="md__title md__title_first">Multiply и Screen</h1>
+<h3 class="md__title md__title_third">Multiply (затемнение)</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/GuEt1NjREF.jpg" alt=""></div>
+<div class="md__paragraph">Multiply затемняет по логике <span class="md__strong">падения точки белого</span> и даёт <span class="md__strong">падение контраста по всему тоновому диапазону</span>. Влияние сильнее в светах и уменьшается к теням.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/APVBqHZUzl.jpg" alt=""></div>
+<h3 class="md__title md__title_third">Screen (осветление)</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/m2O3Rk0jnM.jpg" alt=""></div>
+<div class="md__paragraph">Screen осветляет по логике <span class="md__strong">подъёма точки чёрного</span> и также даёт <span class="md__strong">падение контраста по всему тоновому диапазону</span>. Влияние сильнее в тенях и уменьшается к светам.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/tJZTtIIY7t.jpg" alt=""></div>
+<h3 class="md__title md__title_third">«Невидимые» цвета</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">В Screen чёрный не виден.</div>
+</div>
+<div class="md__list-elem">В Multiply белый не виден.</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Color Burn / Color Dodge и Linear Burn / Linear Dodge</h1>
+<h3 class="md__title md__title_third">Color Burn</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/prbIpgswCZ.jpg" alt=""></div>
+<div class="md__paragraph"><span class="md__strong">Color Burn</span> — 
+двигает точку черного вправо, агрессивное затемнение, умеет уводить тени
+ в отсечку, при этом повышает контраст на оставшемся диапазоне.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/SvsSwyVLKL.jpg" alt=""></div>
+<h3 class="md__title md__title_third">Color Dodge</h3>
+<div class="md__paragraph"><span class="md__strong">Color Dodge</span> — двигает точку белого влево, агрессивное осветление, умеет уводить света в отсечку.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/fPJveLyUeX.jpg" alt=""></div>
+<h3 class="md__title md__title_third">Linear Burn / Linear Dodge</h3>
+<div class="md__paragraph">Linear Dodge — двигает и точку белого, и точку черного, организуя параллельный перенос кривой выше первоначального положения.</div>
+<div class="md__paragraph">Linear Burn — двигает и точку белого, и точку черного, организуя параллельный перенос кривой ниже первоначального положения.</div>
+<div class="md__paragraph">Linear Burn и Linear Dodge могут приводить к отсечке: </div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Linear Dodge — в светах,
+<img class="md__img" src="Lesson%2010_files/NfCq2ajXT9.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Linear Burn — в тенях.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/gbL7Z45deG.jpg" alt=""></div>
+</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Контрастные режимы: нейтральный 50% серый</h1>
+<h3 class="md__title md__title_third">Нейтральный цвет контрастной группы</h3>
+<div class="md__paragraph">Для всей контрастной группы нейтральный (невидимый) цвет — <span class="md__strong">средний серый 128</span>.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/LfN7RGBqGi.png" alt=""></div>
+<div class="md__paragraph">В Photoshop можно создавать слой сразу в нужном режиме (например, Hard Light) и заливать его нейтральным цветом (опция <span class="md__em">Fill with neutral color</span>): такой слой визуально «ничего не делает», пока на нём не появятся пиксели светлее/темнее 128.</div>
+<h3 class="md__title md__title_third">Hard Light</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_59PSNxjOE0.jpg" alt=""></div>
+<div class="md__paragraph">Hard Light — это <span class="md__strong">Multiply + Screen в одном режиме</span>:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Всё <span class="md__strong">светлее</span> среднего серого осветляет по алгоритму Screen.</div>
+</div>
+<div class="md__list-elem">Всё <span class="md__strong">темнее</span> среднего серого затемняет по алгоритму Multiply.</div>
+</div>
+<div class="md__paragraph">Осветление и затемнение происходят с падением контраста по всему диапазону.</div>
+<h3 class="md__title md__title_third">Vivid Light</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/g0W8udv1gp.jpg" alt=""></div>
+<div class="md__paragraph">Vivid Light — это <span class="md__strong">Color Dodge + Color Burn</span> вокруг среднего серого. Режим может выжигать света и тени, повышая контраст.</div>
+<h3 class="md__title md__title_third">Linear Light</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/XlK6ElPX8a.jpg" alt=""></div>
+<div class="md__paragraph">Linear Light — это <span class="md__strong">Linear Dodge + Linear Burn</span> вокруг среднего серого. Тоже может уводить в отсечку, но действует по «линейной» логике.</div>
+<h3 class="md__title md__title_third">Overlay</h3>
+<div class="md__paragraph">Overlay — контрастный режим, где осветление/затемнение происходит «дугообразной» логикой <span class="md__strong">без движения точки чёрного и точки белого</span>. Максимальное влияние приходится на среднюю часть тонового диапазона и уменьшается к краям.</div>
+<div class="md__paragraph">Затемнение в Overlay
+<img class="md__img" src="Lesson%2010_files/BZM4jdsiJM.png" alt=""></div>
+<div class="md__paragraph">Осветление в Overlay
+<img class="md__img" src="Lesson%2010_files/TPXj7bdwgG.png" alt=""></div>
+<h3 class="md__title md__title_third">Soft Light</h3>
+<div class="md__paragraph">Soft Light — «младший брат» Overlay: эффект 
+похожий, но мягче и с акцентом влияния в левой части диапазона (в 
+тенях/3⁄4 тонах). Точка чёрного и точка белого не двигаются.</div>
+<div class="md__paragraph">Осветление
+<img class="md__img" src="Lesson%2010_files/FOzDL7K1RK.png" alt=""></div>
+<div class="md__paragraph">Затемнение
+<img class="md__img" src="Lesson%2010_files/P6CzNU1R7u.png" alt=""></div>
+<hr>
+<h1 class="md__title md__title_first">Как режимы наложения работают по каналам</h1>
+<h3 class="md__title md__title_third">Ключевая идея</h3>
+<div class="md__paragraph">«Цвет» — это производная: под ним скрываются <span class="md__strong">три чёрно‑белые картинки</span> (R, G, B). При наложении режим преобразует <span class="md__strong">каждый канал отдельно</span>.</div>
+<h3 class="md__title md__title_third">Практический вывод</h3>
+<div class="md__paragraph">Один и тот же цветной штрих в разных режимах 
+равен трем отдельным изменениям кривых в каждом канале — и итоговый цвет
+ получается из суммы этих трёх независимых преобразований.</div>
+<hr>
+<h1 class="md__title md__title_first">Hue / Saturation / Color / Luminosity (HSB‑логика)</h1>
+<div class="md__paragraph">Эта группа берёт из слоя <span class="md__strong">не RGB‑каналы</span>, а отдельные составляющие «цвета»:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Color</span> берёт с текущего слоя <span class="md__strong">только хроматику (цвет) </span> (оттенок + насыщенность), а яркость/светотень — с нижележащей картинки.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Luminosity</span> берёт с текущего слоя <span class="md__strong">только яркостную составляющую (яркость)</span>, а цвет (оттенок + насыщенность) — снизу.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Hue</span> берёт с текущего слоя <span class="md__strong">только оттенок</span>, насыщенность и яркость — снизу.</div>
+</div>
+<div class="md__list-elem"><span class="md__strong">Saturation</span> берёт с текущего слоя <span class="md__strong">только насыщенность</span>, оттенок и яркость — снизу.</div>
+</div>
+<h3 class="md__title md__title_third">Типичный смысл</h3>
+<div class="md__paragraph">Эти режимы используют, когда от коррекции нужно «протащить» только <span class="md__strong">яркость</span> или только <span class="md__strong">цвет</span>, чтобы не происходили нежелательные сдвиги.</div>
+<hr>
+<h1 class="md__title md__title_first">Lighten vs Lighter Color и Darken vs Darker Color</h1>
+<h3 class="md__title md__title_third">В чём разница</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Lighten/Darken</span> работают <span class="md__strong">по‑канально</span> (RGB): сравнивают чёрно‑белые картинки каждого канала, из-за чего при цветных накладках может получаться «странный» результат.</div>
+</div>
+<div class="md__list-elem"><span class="md__strong">Lighter Color/Darker Color</span> определяют, какой пиксель светлее/темнее <span class="md__strong">не по RGB‑каналам</span>, а по параметру Brightness (HSB‑логика), и выводят целиком пиксель «как ожидается».</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">4 глобальных случая применения режимов наложения</h1>
+<h3 class="md__title md__title_third">1) Перевести коррекцию в нужный нам формат</h3>
+<div class="md__paragraph">Если коррекция даёт правильную яркость, но «ползёт» цвет — коррекцию переводят, например, в <span class="md__strong">Luminosity</span>.</div>
+<h3 class="md__title md__title_third">2) Рисование кистью для той или иной задачи</h3>
+<div class="md__paragraph">Пример логики: плоскую красноту без светотени можно «прибрать» бежевым в режиме <span class="md__strong">Color</span>.</div>
+<h3 class="md__title md__title_third">3) Комбинирование масок</h3>
+<div class="md__paragraph">Сложение/вычитание сложных масок через режимы наложения.</div>
+<h3 class="md__title md__title_third">4) Вживление одной картинки в другую</h3>
+<div class="md__paragraph">Наложение одного изображения на другое для композита (самый наглядный сценарий).</div>
+<hr>
+<h1 class="md__title md__title_first">Практика: быстрые вклейки без обтравки (Lighten/Darken)</h1>
+<h3 class="md__title md__title_third">Волосы без сложной обтравки</h3>
+<div class="md__paragraph">Если волосы <span class="md__strong">светлее</span>, чем фон:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">слой с волосами переводится в <span class="md__strong">Lighten</span>,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">создаётся <span class="md__strong">чёрная маска</span>,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">мягкой кистью проявляются только нужные области.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/zfTPb0Gjga.png" alt=""> </div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_N8cnJS6bgV.jpg" alt=""></div>
+</div>
+</div>
+<div class="md__paragraph">Это позволяет сложить волосы «дёшево и быстро», без долгой сложной маски.</div>
+<h3 class="md__title md__title_third">Объект на фоне через Darken</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_UmswXfQTk8.jpg" alt=""></div>
+<div class="md__paragraph">Если объект <span class="md__strong">темнее</span> фона (пример с «вороной на газоне»):</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">используется <span class="md__strong">Darken</span>,</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/bo3rJ2LRED.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">при необходимости отдельные области дополняются дубликатом в Normal с маской.</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Практика: Screen для светящихся эффектов</h1>
+<div class="md__paragraph">Screen применяют для переноса на картинку <span class="md__strong">светящихся светлых объектов на чёрном фоне</span>:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">дым,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">пламя,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">молнии,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">засветки и другие световые эффекты.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_mi8x2o62la.jpg" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_DSocl1qYTR.jpg" alt=""></div>
+</div>
+</div>
+<div class="md__paragraph">Чёрный в Screen нейтрален, поэтому «чёрный фон» становится прозрачным.</div>
+<div class="md__paragraph">Светящимся объектам в Screen <span class="md__strong">нельзя снижать непрозрачность</span>: визуально это выглядит «не по жизни». Нужен контроль <span class="md__strong">яркости</span>, а не прозрачности.</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Над световым слоем создаётся корректирующий слой <span class="md__strong">Curves</span>.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Коррекция ограничивается <span class="md__strong">clipping mask</span> (чтобы влияла только на световой слой).</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Для огня точку белого не опускают: хотя бы по
+ одному каналу белый должен оставаться максимально ярким, иначе огонь 
+«перестанет быть огнём».</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_wCH8RKblSI.jpg" alt=""></div>
+</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Практика: Multiply как «печать принтера»</h1>
+<div class="md__paragraph">Multiply работает как печать на принтере или рисование акварелью по бумаге:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">белая бумага «подкладывает» свой цвет,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">белые участки изображения краской не печатаются,</div>
+</div>
+<div class="md__list-elem">на цветной «бумаге» белое становится цветом бумаги, и цвета в целом «подплывают».</div>
+</div>
+<h3 class="md__title md__title_third">Пример</h3>
+<div class="md__paragraph">«Напечатать» логотип/принт на ткани:</div>
+<div class="md__list md__list_ordered">
+<div class="md__list-elem">
+<div class="md__paragraph">поместить подготовленный логотип на фотографию,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">трансформировать по форме,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">перевести логотип в <span class="md__strong">Multiply</span>.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/v8NVw8koek.jpg" alt=""></div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Проблема цвета основы</h3>
+<div class="md__paragraph">На жёлтой футболке или цветной поверхности цвета принта смешиваются с цветом основы.</div>
+<div class="md__paragraph">Показаны варианты решения:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">дублировать логотип и использовать режим <span class="md__strong">Color</span>, чтобы сохранить цвета логотипа,</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/tT19FnEV6g.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">либо подготовить подложку: сделать участок «как белая офисная бумага».</div>
+</div>
+<h3 class="md__title md__title_third">«Белая офисная бумага»</h3>
+<div class="md__list md__list_ordered">
+<div class="md__list-elem">
+<div class="md__paragraph">загрузить выделение по логотипу,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">создать слой <span class="md__strong">Hue/Saturation</span> ниже логотипа по выделению и обесцветить основу,</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/2TnHmjIlnC.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">создать <span class="md__strong">Curves</span> и осветлить основу,</div>
+</div>
+<div class="md__list-elem">сделать Curves клиппинг‑маской к Hue/Saturation.</div>
+</div>
+<h3 class="md__title md__title_third">Контроль отсечки в Curves</h3>
+<div class="md__paragraph">При движении точки белого в Curves используется <span class="md__strong">Alt</span> для режима отсечки:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">при зажатом Alt видно, где начинается клиппинг,</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/c93OPcIVuG.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">точку белого двигают до начала отсечки и немного возвращают назад.</div>
+</div>
+<h3 class="md__title md__title_third">Перенос зеркальных бликов на «глянцевый принт»</h3>
+<div class="md__paragraph">Напечатанный принт часто бликует как глянец. Зеркальные (спекулярные) блики переносятся отдельным слоем.</div>
+<div class="md__list md__list_ordered">
+<div class="md__list-elem">
+<div class="md__paragraph">Загрузить выделение по маске области принта.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Сделать копию «того, что видно на экране» в эту область (Shift+Ctrl/Command+C).</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Вставить на новый слой над принтом.   </div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Перевести слой в <span class="md__strong">Screen</span>.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Если блики «неправильные» из‑за слишком светлой базы — затемнить этот слой <span class="md__strong">Curves</span> в клиппинг‑маске так, чтобы получилась почти чёрная картинка только с белыми бликами.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/IMBClknBrg.jpg" alt=""></div>
+</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Практика: перенос теней на новый фон через Multiply</h1>
+<div class="md__paragraph">Пересадить светлый объект на новый фон и сохранить естественные контактные тени.</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Дублировать слой с исходником (или нужную часть сцены).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_nAGyf7Eisg.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">На исходном слое выделить объект с помощью 
+Select Subject и создать маску, так чтобы объект отделился от исходного 
+фона, временно скрываем слой.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_EkrVJmAMZO.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Перевести копию слоя (где проявляем тени) в <span class="md__strong">Multiply</span>.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Маской и/или градиентом ограничить, где тени должны проявляться.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_7rNwlBnppY.png" alt=""> </div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Curves‑коррекцией сделать «пол» максимально белым (белый для Multiply нейтрален), чтобы на слое остались в основном тени.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_78MsMDzmcl.jpg" alt=""></div>
+</div>
+</div>
+<div class="md__list md__list_ordered">
+<div class="md__list-elem">Чёрной кистью убирать лишние затемнения</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Практика: замены/добавления неба (облаков)</h1>
+<h3 class="md__title md__title_third">Ч/б картинка из красного канала</h3>
+<div class="md__paragraph">В <span class="md__strong">красном</span> канале белые облака темном небе:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Открыть панель <span class="md__strong">Channels</span>.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_JNHwoD4Mxa.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Скопировать канал.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Поместить в нужную картинку на слои в Screen и усилить контраст при необходимости (Curves) в clipping mask к этому слою</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_PWUItJDBdO.jpg" alt=""></div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Вариант переноса через Overlay / Soft Light</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">слой с небом/фактурой переводится в <span class="md__strong">Overlay</span> или <span class="md__strong">Soft Light</span> (результат действия которого нравится больше);</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">уменьшаем насыщенность слоя через Hue/Saturation в clipping mask чтобы убрать перенасыщенность цветов при наложении.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_cbu9YIs9QL.png" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_kykZhf0Zee.jpg" alt=""></div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Вариант через Multiply</h3>
+<div class="md__paragraph">Multiply используют, когда небо/облака должны <span class="md__strong">затемнять</span> основу и при этом «пропускать» светлые области (белое в Multiply нейтрально).</div>
+<div class="md__paragraph">Базовая схема:</div>
+<div class="md__list md__list_ordered">
+<div class="md__list-elem">
+<div class="md__paragraph">Положить слой с небом над изображением (в котором важный объект вырезается маской от воздействия) </div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Перевести слой в <span class="md__strong">Multiply</span>.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_T640VA2JrR.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Корректирующим слоем <span class="md__strong">Curves</span> сделать так, чтобы «небо-фон» стало максимально светлым/белым, а на слое остались в основном облака/тональные перепады.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_1wVE4Lvpuk.png" alt=""></div>
+<div class="md__paragraph">Коррекция переводится в <span class="md__strong">Luminosity</span> когда нужно взять из коррекции только яркостную составляющую и не менять цвет.</div>
+<div class="md__paragraph">Режим наложения Normal</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_3q54ulGZRm.jpg" alt=""></div>
+<div class="md__paragraph">Режим наложения Luminosity
+<img class="md__img" src="Lesson%2010_files/Qm8243M858.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Маской (градиентом) ограничить область влияния, чтобы Multiply не «грязнил» низ кадра.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_HljlZy6SIo.png" alt=""></div>
+<div class="md__paragraph">Общую яркость неба увеличили после наложения через  Curves</div>
+</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Практика: прозрачные объекты (стекло) и Hard Light</h1>
+<h3 class="md__title md__title_third">Особенности задачи</h3>
+<div class="md__paragraph">Для бутылок/стекла важны одновременно <span class="md__strong">света и тени</span>, а также «плотность» стекла. Логика съёмки:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">нейтральный ровный фон,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">равномерный свет,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">фон привести к <span class="md__strong">среднему серому 128</span>, потому что для контрастных режимов это нейтраль.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_jkOgkqrNwZ.jpg" alt=""></div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Почему Hard Light</h3>
+<div class="md__paragraph">Hard Light объединяет Screen и Multiply 
+вокруг среднего серого, поэтому может переносить и светлую, и тёмную 
+составляющую прозрачного объекта.</div>
+<hr>
+<h1 class="md__title md__title_first">Сделать натюрморт «более картинным» (текстура стены)</h1>
+<div class="md__paragraph">Заменить простой серый студийный фон на более
+ живописную «текстурную стеночку» и собрать итог так, чтобы всё 
+выглядело естественно.</div>
+<h3 class="md__title md__title_third">Подбор режима наложения для текстуры</h3>
+<div class="md__paragraph">Для накладывания стены на средне‑серый фон подходят:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Overlay</span> (часто лучший),</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Soft Light</span>,</div>
+</div>
+<div class="md__list-elem"><span class="md__strong">Hard Light</span>.</div>
+</div>
+<div class="md__paragraph">Не подходят по смыслу:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Screen</span> (не световой эффект и не чёрный фон),</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">режимы осветляющей/затемняющей группы, если фон и текстура оба «средние» по яркости,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Color</span> (перенесёт цвет, но не фактуру),</div>
+</div>
+<div class="md__list-elem">Vivid Light / Linear Light (дают агрессивную отсечку).</div>
+</div>
+<h3 class="md__title md__title_third">Обработка стелка (бокала) отдельно от остального изображения</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Сделать дубль слоя стены.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Выделить только прозрачную часть стекла (без поверхности вина).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_T8hknYEttk.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Этим выделением ограничить дубль стены.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Вынести слой из группы, если группа «не даёт видимости».</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Перевести дубль стены на бокал в <span class="md__strong">Soft Light</span> (даёт ощущение «плотности» стекла).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_2Msd7VO0l2.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Для правки маски: маленькая чёрная кисть средней жёсткости.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Для ровного края: рисование по точкам с зажатым <span class="md__strong">Shift</span>.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2010_files/chrome_Itj3cEfkXl.jpg" alt=""></div>
+</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Режимы наложения, которые почти не используются</h1>
+<div class="md__paragraph">Режимы <span class="md__strong">Vivid Light, Linear Light, Color Dodge, Linear Dodge, Color Burn, Linear Burn</span>
+ в реальной практике для «вживления» используются крайне редко, потому 
+что они агрессивно двигают края тонового диапазона и уводят их в 
+отсечку.</div>
+<div class="md__paragraph">Исключение из «почти никогда»: <span class="md__strong">Linear Light</span> нужен в частотном разложении.</div>
+<div class="md__paragraph"><span class="md__strong">Pin Light</span> и <span class="md__strong">Hard Mix</span> обозначены как режимы, к которым обычно не обращаются.</div>
+<hr>
+<h1 class="md__title md__title_first">Самостоятельное изучение</h1>
+<div class="md__paragraph">Рекомендуется посмотреть на YouTube‑канале школы стрим <span class="md__strong">«ФотоШапито»</span> с примером перекрашивания объектов (в том числе флакончик и столик) со специфическим использованием режимов наложения.</div>
+<div class="md__paragraph"><a class="link md__link" href="https://youtu.be/pVLn3GY499w">Youtube</a></div>
+<div class="md__paragraph"><a class="link md__link" href="https://vk.com/video-37326077_456242953">VK</a></div>
+    </div>
+                    </div>
+</body></html>
