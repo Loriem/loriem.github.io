@@ -1,0 +1,965 @@
+<html><head>
+        <title>Adobe Photoshop: современная обработка изображений, занятие №12</title>
+                    <link rel="stylesheet" href="Lesson%2012_files/main.4710.min.css">
+</head>
+    <body class="vsc-initialized">
+        <div class="wrapper">            
+                <div class="content-wrapper page-wrapper page-wrapper--bottom">
+        <div class="title">Adobe Photoshop: современная обработка изображений, занятие №12</div>
+        <h1 class="md__title md__title_first">Содержание</h1>
+<div class="md__list">
+<div class="md__list-elem">Геометрические трансформации</div>
+<div class="md__list-elem">Размытие, резкость и Liquify</div>
+<div class="md__list-elem">Smart Object</div>
+<div class="md__list-elem">Практика: чистка предметки</div>
+<div class="md__list-elem">Практика: выравнивание фона</div>
+<div class="md__list-elem">Практика: трансформации на теле с маской</div>
+<div class="md__list-elem">Практика: обработка студийной фотографии</div>
+</div>
+<hr>
+<hr>
+<h1 class="md__title md__title_first">Геометрические трансформации</h1>
+<h3 class="md__title md__title_third">Базовая логика трансформаций</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Трансформация применяется либо ко всему слою, либо к выделенной области.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Если выделение активно, трансформируется рамка выделения.</div>
+</div>
+<div class="md__list-elem">Если выделения нет, трансформируется «совокупная область непрозрачных пикселей» слоя.</div>
+</div>
+<h3 class="md__title md__title_third">Free Transform: вызов и базовые действия</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Трансформация вызывается клавиатурным сокращением <span class="md__strong">Ctrl + T</span> (Windows) / <span class="md__strong">Command + T</span> (Mac).</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Рамку трансформации можно:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">вращать,</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_0OfWs2hdq1.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">менять ширину и высоту,</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_P6DKuRpSnH.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">масштабировать за угол.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_mds4yyNDqK.png" alt=""></div>
+</div>
+</div>
+</div>
+<div class="md__list-elem">Отмена применения — <span class="md__strong">Esc</span>.</div>
+</div>
+<h3 class="md__title md__title_third">Важные клавиши-модификаторы при трансформации</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Shift</span>:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">при включенной настройке <span class="md__em">Use Legacy Free Transform</span> сохраняет соотношение сторон (квадрат остаётся квадратом);</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_5igmvm12As.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">фиксирует поворот «шагами» по 15 градусов.</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Alt (Option)</span>:</div>
+<div class="md__list">
+<div class="md__list-elem">масштабирование происходит из центра трансформируемой области.</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Alt + клик</span> внутри/снаружи области трансформации:</div>
+<div class="md__list">
+<div class="md__list-elem">смещение точки, вокруг которой масштабирование «тянется из центра».</div>
+</div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Панель Options при активной трансформации</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_WP6Ph9Aw1A.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Можно вводить значения ширины/высоты в процентах.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Можно «связать» ширину и высоту через значок цепочки.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_cvKGQ7JsiT.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Единицы измерения можно переключать (например, проценты ↔ пиксели).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_Q1DafHZplH.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Угол поворота можно вводить числом (операция применится после Enter).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_kvhwasSsFd.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Интерполяция:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_rZQuIHZjrT.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">рекомендуется не усложнять и оставлять <span class="md__strong">Bicubic</span>.</div>
+</div>
+<div class="md__list-elem"><span class="md__strong">Automatic</span> выбирает более «умный» вариант (например, может чуть подрезчать при уменьшении).</div>
+</div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Контекстное меню Free Transform: виды трансформации</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_LIjP2Ft36T.png" alt=""></div>
+<div class="md__paragraph">При правом клике по области трансформации доступны варианты:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Scale</span> — только масштабирование.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Rotate</span> — только поворот.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Skew</span> — «параллелограммирование», обычно тянут вдоль сторон.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_5nh6sJ5fAY.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Perspective</span> — принято тянуть за углы.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_y7OASEk985.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Distort</span> — без ограничений можно тянуть куда угодно.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Rotate 180 / 90 CW / 90 CCW</span> — повороты на фиксированные углы: 180, 90 по часовой, 90 против часовой.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Flip Horizontal / Flip Vertical</span> — зеркалирование по горизонтали/вертикали.</div>
+</div>
+<div class="md__list-elem"><span class="md__strong">Warp</span> — изгибание.</div>
+</div>
+<h3 class="md__title md__title_third">Warp: принцип, сетка и Split Warp</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_y7fLd8frSS.jpg" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_um98uqodcG.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Warp «гнёт» область по сетке.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Количество секторов сетки можно менять:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">чаще используется дефолтная <span class="md__strong">3×3</span>,</div>
+</div>
+<div class="md__list-elem">большие сетки дают много точек и легко «утонуть» в управлении.</div>
+</div>
+</div>
+<div class="md__list-elem">Есть пресеты форм (например, «арка») и параметр силы формы.</div>
+</div>
+<div class="md__paragraph"><span class="md__strong">Split Warp</span>:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_A8qQdoPkWA.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__em">Split Warp Vertically</span> — дробит сетку по вертикали в месте клика.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__em">Split Warp Horizontally</span> — дробит по горизонтали.</div>
+</div>
+<div class="md__list-elem"><span class="md__em">Split Warp Crosswise</span> — дробит и вертикально, и горизонтально.</div>
+</div>
+<h3 class="md__title md__title_third">Практическая логика выбора области для Warp</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_mJM7Yx7E6y.jpg" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Выбор области важен из‑за стыковки с остальной картинкой.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Чтобы «не порвать» контур, интересующую 
+область удобно загонять в крайний сектор сетки, чтобы остальные границы 
+«стояли на месте».</div>
+</div>
+<div class="md__list-elem">Альтернатива: выбирать область так, чтобы интересующая часть попадала в центр и рамка вокруг двигалась минимально.</div>
+</div>
+<h3 class="md__title md__title_third">Практика: выравнивание картины под точные пропорции</h3>
+<div class="md__paragraph">Кейс: картина сфотографирована с небольшим наклоном и выглядит как трапеция.<br>
+Последовательность:</div>
+<div class="md__list md__list_ordered">
+<div class="md__list-elem">
+<div class="md__paragraph">Обрезкой задать <span class="md__strong">соотношение сторон</span> (пример: 24×18).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_1ZDU69Cdj3.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Создать новый слой, залить цветом прямоугольник нужных пропорций.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Пропорционально уменьшить и поставить <span class="md__strong">гайды</span> по прямоугольнику (вытягиваются при клике и удерживании левой кнопки мышки по линейке).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_otVRzYJXhv.png" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_yuHO4d1T5T.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Удалить прямоугольник (он нужен только для гайдов).</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Вызвать трансформацию слоя с картиной.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Выбрать <span class="md__strong">Distort</span>.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Потянуть углы картины так, чтобы они попали в гайды «с маленьким зазором».</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_9OZbo0SxDG.jpg" alt="">  </div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Растянуть выделение по гайдам и сделать  <span class="md__strong">Image → Crop</span>.</div>
+</div>
+<div class="md__list-elem">При необходимости повернуть весь документ через <span class="md__strong">Image → Image Rotation</span>.</div>
+</div>
+<h3 class="md__title md__title_third">Puppet Warp</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Puppet Warp применяется к <span class="md__strong">вырезанному объекту на отдельном слое</span>.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Последовательность:</div>
+<div class="md__list md__list_ordered">
+<div class="md__list-elem">
+<div class="md__paragraph">Выделить объект.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Скопировать на отдельный слой (<span class="md__strong">Ctrl/Cmd + J</span>).</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Убрать объект с фона (через Remove или через Content-Aware Fill).</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">На слое с объектом: <span class="md__strong">Edit → Puppet Warp</span>.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Поставить точки‑фиксаторы по «суставам» и важным зонам, которые не должны двигаться.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_eXTBUnh0ri.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Тянуть нужную точку для деформации.</div>
+</div>
+<div class="md__list-elem"><span class="md__strong">Alt</span> на точке — поворот вокруг точки.</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Инструмент может быть «не самым стабильным» и требовать дополнительных фиксаций.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Сильные искажения на «сюжетно значимой части» (пример: лицо) можно исправлять так:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">сделать копию исходной части (лицо),</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">повернуть обычной трансформацией,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">снизить непрозрачность, совместить,</div>
+</div>
+<div class="md__list-elem">накрыть чёрной маской и белой кистью проявить «не деформированное» лицо.</div>
+</div>
+</div>
+<div class="md__list-elem">Так сохраняется наклон/изгиб (например, шеи) от Puppet Warp и «чистая» статичная часть от обычной трансформы.</div>
+</div>
+<h3 class="md__title md__title_third">Дополнение по увеличению объектов и детализации</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">При сильном увеличении «детали из ниоткуда не появятся».</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Варианты:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">небольшое увеличение (примерно 1.5×) — обычная трансформация + маска;</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">большое увеличение — искусственный интеллект:</div>
+<div class="md__list">
+<div class="md__list-elem">уточнение: генеративные инструменты имеют 
+ограничение по разрешению области генерации (порядка ~2000 px), большие 
+области могут «растягиваться».</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Размытие, резкость и Liquify</h1>
+<h3 class="md__title md__title_third">Какие фильтры реально используются</h3>
+<div class="md__paragraph">Группы, которые нужны:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Blur</span> (чуть‑чуть).</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Noise</span> (чуть‑чуть).</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Other</span> (чуть‑чуть).</div>
+</div>
+<div class="md__list-elem"><span class="md__strong">Sharpen</span> (чуть‑чуть).</div>
+</div>
+<h3 class="md__title md__title_third">Blur: Gaussian Blur</h3>
+<div class="md__paragraph">Размытие.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_fzbwYQLZyQ.jpg" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Один ползунок — <span class="md__strong">Radius</span> - сила размытия</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_nmDSzKAnqc.png" alt=""></div>
+</div>
+<div class="md__list-elem">Фильтр влияет на весь слой, либо на выделение.</div>
+</div>
+<div class="md__paragraph"><span class="md__strong">Критически важное правило:</span></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Снижение непрозрачности размытого слоя <span class="md__strong">не означает</span> «размыть на меньшее количество пикселов».</div>
+</div>
+<div class="md__list-elem">Если нужен меньший blur — возвращение к неразмытому состоянию и новый blur с меньшим радиусом.</div>
+</div>
+<h3 class="md__title md__title_third">Blur: Motion Blur</h3>
+<div class="md__paragraph">Размытие с направлением (как съемка с проводкой)</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_2QXavbFJO6.jpg" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_o6nT1iQiTM.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">Имеет <span class="md__strong">вектор</span> размытия (имитация движения/проводки).</div>
+</div>
+<h3 class="md__title md__title_third">Blur Gallery: основные типы</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Iris Blur</span>: внутри ромбиков резко, снаружи — нерезкость; можно делать круг (Shift) и разносить границы перехода (Alt).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_ZUDLYCz3LA.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Tilt-Shift</span>: линейная зона резкости; между линиями — переход, за пунктиром — полная нерезкость.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_QzKDMoUsld.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Path Blur</span>: как Motion Blur, но по заданной траектории.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_8JiI7VbOEv.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Field Blur</span>: несколько точек с разным радиусом, размытие плавно «перетекает» между зонами.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_eZIhITS9bA.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Spin Blur</span>: закручивает картинку вокруг области.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_PCCbc9vC2V.jpg" alt=""></div>
+</div>
+</div>
+<div class="md__paragraph">Замечание по практике:</div>
+<div class="md__list">
+<div class="md__list-elem">После появления ИИ подобные сложные блюры 
+часто проще заменить генерацией «по промту» (пример: статичная машина → 
+эффект проводки + закрученные колёса).</div>
+</div>
+<h3 class="md__title md__title_third">Резкость: базовый принцип</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Если промах по фокусу — спасает только искусственный интеллект.</div>
+</div>
+<div class="md__list-elem">Если фокус в целом норм, но хочется «чуть более звенящую» картинку — применяется повышение резкости.</div>
+</div>
+<h3 class="md__title md__title_third">Unsharp Mask: основной рабочий фильтр резкости</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_jz8WyrUiwK.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Используется <span class="md__strong">Unsharp Mask</span>.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Три параметра:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Amount</span> — сила.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Radius</span> — «размер деталей», по которым образуются ореолы.</div>
+</div>
+<div class="md__list-elem"><span class="md__strong">Threshold</span> — отсечка, чтобы меньше цеплять шум.</div>
+</div>
+</div>
+</div>
+<div class="md__paragraph">Резкость — это образование <span class="md__strong">контрастных ореолов</span> вокруг мелких деталей и контуров.</div>
+<h3 class="md__title md__title_third">Коридор радиусов резкости</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Типичный рабочий диапазон радиуса: <span class="md__strong">0.5–2 px</span>.</div>
+</div>
+<div class="md__list-elem">Значения около <span class="md__strong">3 px</span> — «на грани расфокуса»; если нужно так много, это похоже на попытку лечить резкостью промах по фокусу.</div>
+</div>
+<h3 class="md__title md__title_third">Усиление резкости в два этапа</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Вариант: сначала резкость с большим радиусом 
+(более крупные детали), затем дубль и резкость с меньшим радиусом (более
+ мелкие детали).</div>
+</div>
+<div class="md__list-elem">Результат часто проявляется по маске только 
+там, где нужно (например, лицо), и может дополнительно ослабляться на 
+областях, где резкость поднялась слишком сильно.</div>
+</div>
+<h3 class="md__title md__title_third">High Pass и контрастные режимы</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">High Pass</span> — «гауссовое размытие, вывернутое наизнанку».</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Даёт те же ореолы, которые потом усиливаются контрастным режимом наложения.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Использование:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">High Pass + <span class="md__strong">Overlay</span>,</div>
+</div>
+<div class="md__list-elem">либо <span class="md__strong">Linear Light</span> с понижением непрозрачности.</div>
+</div>
+</div>
+<div class="md__list-elem">Замечание: это по сути тот же принцип, что и Unsharp Mask.</div>
+</div>
+<h3 class="md__title md__title_third">Noise: Dust &amp; Scratches</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Убирает пыль, царапины, мелкие контрастные волоски, что-то мелкое и контрастное к фону.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_eW3ogpNYAx.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Настройки:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Radius</span> — размер удаляемых элементов.</div>
+</div>
+<div class="md__list-elem"><span class="md__strong">Threshold</span> — возвращает фактуру (чем выше, тем больше фактуры возвращается).</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Практика:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">корректировать на дубле,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">переводить слой в <span class="md__strong">Darken</span> (если убирается светлое на тёмном) или <span class="md__strong">Lighten</span> (если убирается тёмное на светлом),</div>
+</div>
+<div class="md__list-elem">проявлять эффект по маске только там, где нужно.</div>
+</div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Noise: Add Noise</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Используется для добавления шума.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_yyEOgKEXYb.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Важная галка: <span class="md__strong">Monochromatic</span> (шум нужен чёрно‑белый).</div>
+</div>
+<div class="md__list-elem">Режим распределения: Uniform / Gaussian (рисунок шума).</div>
+</div>
+<h3 class="md__title md__title_third">Noise: Median</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">«Медиан — это тот же самый гаусс, но с попыткой сохранить чёткие контуры».</div>
+</div>
+<div class="md__list-elem">Применение: частотное разложение.</div>
+</div>
+<h3 class="md__title md__title_third">Liquify</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_R1auIbgu9T.jpg" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Liquify — «фильтр кисточного формата» для геометрических изменений.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Основная логика: направление движение кисти определяет направление трансформации, так всё и изменится.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_WFANNj5Hec.png" alt=""></div>
+</div>
+</div>
+<div class="md__paragraph">Параметры кисти:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Size</span> — размер.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Density</span> — похоже на жёсткость: при большой плотности двигается зона по краю окружности, при меньшей — сильнее в центре.</div>
+</div>
+<div class="md__list-elem"><span class="md__strong">Pressure</span> — похоже на непрозрачность: меньше — слабее эффект, больше — сильнее.</div>
+</div>
+<div class="md__paragraph">Восстановление:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Reconstruct Tool</span> — «восстановить» изменения.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_0K5JmABpdL.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Ползунок Reconstruct — откатывает сетку изменений на заданный процент.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_MELZC1Cy0P.png" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_De117ifZOf.png" alt=""></div>
+</div>
+</div>
+<div class="md__paragraph">Face-Aware:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_M4WdvGV3lt.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Отдельные настройки лица (глаза, нос, улыбка, губы, челюсть, лоб).</div>
+</div>
+<div class="md__list-elem">Предупреждение: «улыбка в ликвифае» выглядит плохо; если нужна улыбка — лучше просить ИИ.</div>
+</div>
+<div class="md__paragraph">Технические опции:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Pin Edges</span> — не даёт «выползать» границам кадра при деформации.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Freeze Mask</span> — замораживает области, которые не должны двигаться; затем можно стереть инструментом <span class="md__strong">Thaw Mask Tool</span>.</div>
+<div class="md__paragraph">Freeze Mask
+<img class="md__img" src="Lesson%2012_files/chrome_Kvm3X8E0hN.png" alt=""></div>
+<div class="md__paragraph">Thaw Mask Tool
+<img class="md__img" src="Lesson%2012_files/chrome_reuXh4mSnW.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Show Mesh</span> — показывает сетку.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_stHQ68qR87.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Save Mesh / Load Mesh</span> — сохранение сетки в файл <span class="md__em">.msh</span> и применение к другому кадру.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_EQ642mHobc.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Show Backdrop</span> — показывает нижележащие слои полупрозрачно для сравнения с оригиналом.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_8jyCwG6wSF.png" alt=""></div>
+</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Smart Object</h1>
+<h3 class="md__title md__title_third">Smart Object: базовая идея</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Smart Object создаётся через <span class="md__strong">Convert to Smart Object</span>.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_FCIt3ZOtX9.png" alt=" "></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Смарт‑объект — это «файл внутри файла».</div>
+</div>
+<div class="md__list-elem">После конвертации можно уменьшать/увеличивать и «не портить» качество при геометрических трансформациях.</div>
+</div>
+<h3 class="md__title md__title_third">Редактирование смарт‑объекта</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Смарт‑объект открывается <span class="md__strong">двойным кликом</span> в отдельном окне.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Внутри можно делать изменения, добавлять слои.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Сохранение внутри смарт‑объекта — <span class="md__strong">Ctrl/Cmd + S</span>.</div>
+</div>
+<div class="md__list-elem">После сохранения и закрытия смарт‑объект обновляется в основном документе.</div>
+</div>
+<h3 class="md__title md__title_third">Smart Filters</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Фильтры, применённые к смарт‑объекту, становятся «смарт‑фильтрами» (недеструктивные коррекции).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_pYCl78XxJH.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Можно:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">отключать «глазиком»,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">дважды кликать по названию фильтра и менять параметры,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">удалять фильтр перетаскиванием в корзину,</div>
+</div>
+<div class="md__list-elem">менять порядок фильтров.</div>
+</div>
+</div>
+<div class="md__list-elem">Коррекции могут «крепиться» к смарт‑объекту как к недеструктивной структуре.</div>
+</div>
+<h3 class="md__title md__title_third">Цена смарт‑объектов</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Смарт‑объекты и смарт‑фильтры «утяжеляют файл» и нагружают компьютер.</div>
+</div>
+<div class="md__list-elem">Плюс: можно «в любой момент недеструктивно откатиться к любой из стадий обработки».</div>
+</div>
+<h3 class="md__title md__title_third">Когда смарт‑объект больше не нужен</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Если обработка финализирована, смарт‑объект можно превратить в обычный слой:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Rasterize Layer</span>.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_2lJw7FjkET.jpg" alt=""></div>
+</div>
+</div>
+</div>
+<div class="md__list-elem">После растрирования теряются свойства смарт‑объекта и смарт‑фильтров.</div>
+</div>
+<h3 class="md__title md__title_third">Дубликаты смарт‑объектов: зависимые и независимые</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Если дублировать смарт‑объект обычным дубликатом слоя (<span class="md__strong">Ctrl/Cmd + J</span>) изменения внутри одного смарт‑объекта «переползут» в другой.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Если нужна независимая копия - команда <span class="md__strong">New Smart Object via Copy</span>, тогда два смарт‑объекта «отвязаны друг от друга».</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_zNZ7wYSota.jpg" alt=""></div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Ограничение смарт‑объекта как слоя</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Смарт‑объект «не является пиксельным слоем».</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">По нему нельзя напрямую рисовать кистью/штампом.</div>
+</div>
+<div class="md__list-elem">Но можно зайти внутрь смарт‑объекта и рисовать внутри.</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Практика: чистка предметки</h1>
+<div class="md__paragraph">Кейс: флакон с большими «бесфактурными градиентами».</div>
+<div class="md__paragraph">Последовательность действий:</div>
+<div class="md__list md__list_ordered">
+<div class="md__list-elem">
+<div class="md__paragraph">Удаление лишнего элемента:</div>
+<div class="md__list">
+<div class="md__list-elem">выделение (Lasso) + <span class="md__strong">Remove</span>.</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Осветление флакона:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">выделить флакон,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">создать корректирующий слой <span class="md__strong">Curves</span> по текущему выделению,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">сделать флакон чуть ярче.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_h8fNn5GM5F.png" alt=""></div>
+</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Затемнение фона:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">загрузить выделение по маске флакона,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">инвертировать выделение (<span class="md__strong">Shift + Ctrl/Cmd + I</span>),</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">создать корректирующий слой для фона, сделать фон темнее.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/gNmjsv53Sz.png" alt=""></div>
+</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Удаление логотипа:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">грубо выделить логотип,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">скопировать на запасной слой,</div>
+</div>
+<div class="md__list-elem">удалить логотип через Remove.</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Выделение плоскости флакона:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Select Object</span>,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Shift‑добавления/Alt‑вычитания из выделения,</div>
+</div>
+<div class="md__list-elem">добивка Lasso (сверхточность не нужна).</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Копирование «как вижу на экране»:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">создать новый слой,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Copy Merged</span> (<span class="md__strong">Shift + Ctrl/Cmd + C</span>) — копируется выделенная область со всеми видимыми коррекциями,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">вставить на новый слой.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/R5Q9RjuywT.png" alt=""></div>
+</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Перевод в <span class="md__strong">16 bit</span> перед сильным размытием:</div>
+<div class="md__list">
+<div class="md__list-elem">цель: не допустить «лесенки» и постеризации.</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Сильный <span class="md__strong">Gaussian Blur</span> большим радиусом до ровного градиента.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Уплотнение краёв:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">дублировать размытый слой и слить с нижним,</div>
+</div>
+<div class="md__list-elem">повторить, чтобы полупрозрачные края наслаивались.</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Клиппинг:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">размытый слой «прикрепить клиппинг‑маской» к чёткой копии поверхности.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_XKypc9xG5I.png" alt=""></div>
+</div>
+</div>
+</div>
+<div class="md__list-elem">Добавление шума:</div>
+</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Noise → Add Noise</span>,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">подобрать значение (пример: около 8),</div>
+</div>
+<div class="md__list-elem">слить слои.</div>
+</div>
+<div class="md__list md__list_ordered">
+<div class="md__list-elem">
+<div class="md__paragraph">Возврат в <span class="md__strong">8 bit</span> после добавления шума.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Маска и мягкая кисть:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">белая маска,</div>
+</div>
+<div class="md__list-elem">мягкой кистью пройтись по краям, где нужно восстановить контур/тени.</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Возврат логотипа и «вживление»</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Логотип поднимается наверх.</div>
+</div>
+<div class="md__list-elem">Для вживления используется режим наложения <span class="md__strong">Lighten</span> (логика: под логотипом более светлый фон; буквы логотипа светлее размытой поверхности).</div>
+</div>
+</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Практика: выравнивание фона</h1>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Фон копируется «как вижу» на отдельный слой.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Перевод в 16 bit.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Сильный Gaussian Blur до ровного фона.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Клиппинг к чётко обтравленному фо ну.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Небольшой Add Noise.</div>
+</div>
+<div class="md__list-elem">Возврат в 8 bit.</div>
+</div>
+<div class="md__paragraph">Замечание:</div>
+<div class="md__list">
+<div class="md__list-elem">Без достаточного зашумления при сохранении в JPEG может «поползти пастеризация».</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Практика: трансформации на теле с маской</h1>
+<div class="md__paragraph">Лёгкий пример:</div>
+<div class="md__list md__list_ordered">
+<div class="md__list-elem">
+<div class="md__paragraph">Выделить область (Lasso) и дублировать на отдельный слой.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_gQdhW1UDdn.jpg" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_kVh18gf5xD.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Накрыть слой маской, чтобы нужная часть (например, одежда) не деформировалась.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_z37RiqfIhh.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Отвязать слой от маски (чтобы маска не деформировалась).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/SqnItFWMoE.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Вызвать трансформацию, сделать деформацию.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_AmymPFC5Ui.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">Чёрной мягкой кистью по маске убрать косяки.</div>
+</div>
+<div class="md__paragraph">Сложнее (Liquify + маски):</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Дубль → Liquify.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Большой кистью подтянуть форму.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Reconstruct Tool для отката нежелательных сдвигов.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Select Object по нужным зонам и «чёрная маска по выделению» с Alt.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_3OQawrPcJG.jpg" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_nuacFzs5Hu.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Мягкой белой кистью долечить косяки по маске - проявить нужные зоны.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/CQNcMYCYp0.jpg" alt=""></div>
+</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Практика: обработка студийной фотографии</h1>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Сначала привести изображение к <span class="md__strong">4:5</span>, не обрезая сверху и снизу, а «отдалив по краям».</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Так как фон студийный и «ничего в себе не несущий», границы фона можно растянуть трансформацией.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_UxU4Q2nTTR.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Затем:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">сделать дубль,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Ctrl + A</span>,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Ctrl/Cmd + J</span> (оставить только содержимое в пределах кадра),</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">нижний слой удалить.</div>
+</div>
+<div class="md__list-elem">использовать Remove для удаления выделения</div>
+</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_AtauW5w9La.png" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_OOYghiNCny.jpg" alt=""></div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Важное про штамп/лечащую кисть «по чистому слою»</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Для <span class="md__strong">Clone Stamp</span> и <span class="md__strong">Healing Brush</span> используется режим семплинга <span class="md__strong">Current &amp; Below</span>.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_4RXO4Uol5b.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Это позволяет:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">работать по пустому (прозрачному) слою,</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_O8VdLwoNTE.png" alt=""></div>
+</div>
+<div class="md__list-elem">брать донорскую область со всей нижележащей видимой картинки.</div>
+</div>
+</div>
+<div class="md__list-elem">Content-Aware Fill / Content-Aware (через Fill) работает по слою с пикселями, а не по пустому.</div>
+</div>
+<h3 class="md__title md__title_third">Генерация складок, чтобы «убрать объём живота»</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_wGnt3XleUd.jpg" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Задача: подобрать складки так, чтобы визуально живот читался меньше.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_D2lIOk7r8l.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Принцип: объём читается из-за «светлое вверху, тёмное внизу», поэтому можно нагенерировать другие складки.</div>
+</div>
+<div class="md__list-elem">Используются генеративные инструменты (упоминание: Firefly / «нана-банана»).</div>
+</div>
+<h3 class="md__title md__title_third">Коррекция фигуры</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Слить всё в новый слой: <span class="md__strong">Ctrl + Alt + Shift + E</span> (Windows) / <span class="md__strong">Cmd + Option + Shift + E</span> (Mac).</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Конвертировать в Smart Object «на всякий случай».</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Liquify:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">работать большими кистями, чтобы «контур волной не поехал».</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">временно маскировать ногу/область, чтобы не двигалась.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_nlnszx89J9.jpg" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Выравнивание фона</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Выделить объект → инвертировать → сделать слой с дыркой (<span class="md__strong">Ctrl/Cmd + J</span>).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_m8AsnyvdCv.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Отрезать тень (если её не надо размывать).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_9VaAwFbvHb.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Перевод в 16 bit.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Дубль слоя с дыркой → клиппинг маск → сильный Gaussian Blur.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_03TdAfEsQZ.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">если шум добавлять на слой с полупрозрачными краями, шум «не проходит» равномерно.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">сначала слить слой с размытием (получить жёсткий контур),</div>
+</div>
+<div class="md__list-elem">затем Add Noise уже по слитому.</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Если радиус размытия оказался маленьким — 
+откатиться и увеличить (пример: «район 500»), можно дублировать в 
+клиппинг и снова слить.</div>
+</div>
+<div class="md__list-elem">Перевести картинку обратно в 8 bit</div>
+</div>
+<h3 class="md__title md__title_third">Цветокоррекция элементов фона</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Маска на слой: чёрным градиентом слегка замаскировать резкую границу.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_BNayqiyKuk.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Коррекция Curves в клиппинге к слою - поднять яркость так, чтобы зоны «слились».</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_7ND4Gia8RY.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Если оттенок размытого фона отличается от оригинала - применяем цветокоррекцию.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Замаскировать верх маски, чтобы коррекция работала только в нижней части.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2012_files/chrome_QNQvEKw5IO.png" alt=""></div>
+</div>
+</div>
+    </div>
+                    </div>
+</body></html>
