@@ -1,0 +1,511 @@
+<html><head>
+        <title>Adobe Photoshop: современная обработка изображений, занятие №6</title>
+                    <link rel="stylesheet" href="Lesson%2006_files/main.4708.min.css">
+</head>
+    <body class="vsc-initialized">
+        <div class="wrapper">            
+                <div class="content-wrapper page-wrapper page-wrapper--bottom">
+        <div class="title">Adobe Photoshop: современная обработка изображений, занятие №6</div>
+        <h1 class="md__title md__title_first">Содержание</h1>
+<div class="md__list">
+<div class="md__list-elem">Слои, базовые операции и Clipping Mask</div>
+<div class="md__list-elem">Недеструктивная обработка, Channel Mixer и Hue/Saturation</div>
+<div class="md__list-elem">Тонирование, Blend If, Color &amp; Vibrance</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Слои, базовые операции и Clipping Mask</h1>
+<h3 class="md__title md__title_third">Типы слоёв</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Слои бывают пиксельные (растровые) и «все остальные» (например, текстовые и корректирующие).</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">При открытии фотографии в документе обычно один слой (фон/Background) в палитре <span class="md__strong">Layers</span>.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/chrome_15blQIE5Ut.png" alt=""></div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Создание нового пустого пиксельного слоя</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Команда: <span class="md__strong">Ctrl/Command + Shift + N</span> (New).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/chrome_K08svJIjaO.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">В диалоге можно задать:</div>
+<div class="md__list">
+<div class="md__list-elem">имя слоя;</div>
+<div class="md__list-elem">цветовую метку слоя (для удобства поиска в структуре);</div>
+<div class="md__list-elem">режим наложения и непрозрачность.</div>
+</div>
+</div>
+<div class="md__list-elem">Прозрачность нового слоя показывается «шашечками» на миниатюре.</div>
+</div>
+<h3 class="md__title md__title_third">Порядок слоёв</h3>
+<div class="md__list">
+<div class="md__list-elem">Логика «слоёного пирога»: слой выше перекрывает слои ниже.</div>
+<div class="md__list-elem">Порядок меняется перетаскиванием слоя мышью вверх/вниз в палитре <span class="md__strong">Layers</span>.</div>
+</div>
+<h3 class="md__title md__title_third">Выбор слоя и навигация по слоям</h3>
+<div class="md__list">
+<div class="md__list-elem">Выбор слоя: клик по нужному слою в <span class="md__strong">Layers</span>.</div>
+<div class="md__list-elem">Перемещение активного слоя по структуре доступно через меню <span class="md__strong">Layer</span>, но в занятии подчёркнут приоритет мыши и шорткатов.</div>
+<div class="md__list-elem">Команды, которые пригодятся дальше (в том числе для экшенов):
+<div class="md__list">
+<div class="md__list-elem"><span class="md__strong">Alt + [ / ]</span> — переход вверх/вниз по слоям.</div>
+<div class="md__list-elem"><span class="md__strong">Shift + Alt + [ / ]</span> — выделение диапазона слоёв.</div>
+<div class="md__list-elem"><span class="md__strong">Ctrl/Command + [ / ]</span> — перемещение слоя выше/ниже.</div>
+<div class="md__list-elem"><span class="md__strong">Ctl+клик мышью</span>по слою/слоям в Layers — выделение слоя/слоев</div>
+<div class="md__list-elem"><span class="md__strong">Shift+клик мышью</span>по слою в Layers — выделение диапазона слоёв от текущего до того, по которому кликнули.</div>
+</div></div>
+</div>
+<h3 class="md__title md__title_third">Быстрый доступ к Move Tool</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">При зажатом <span class="md__strong">Ctrl/Command</span> текущий инструмент временно превращается в <span class="md__strong">Move Tool</span>.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Для Move Tool должна быть отключена галка <span class="md__strong">Auto Select</span>.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/chrome_BWvdtFfgxJ.png" alt=""></div>
+</div>
+<div class="md__list-elem">Move Tool обычно не выбирается вручную из панели — используется «из-под руки».</div>
+</div>
+<h3 class="md__title md__title_third">Как двигается содержимое слоя</h3>
+<div class="md__list">
+<div class="md__list-elem">Если выделения нет — двигается весь активный слой.</div>
+<div class="md__list-elem">Если есть выделение (бегущий пунктир) — двигается только выделенная область на активном слое.</div>
+</div>
+<h3 class="md__title md__title_third">Видимость, переименование, непрозрачность</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">«Глазик» включает/выключает слой.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Переименование слоя: двойной клик по названию.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Opacity</span> меняет непрозрачность выделенного слоя.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/chrome_b36oXUABmT.png" alt=""></div>
+</div>
+<div class="md__list-elem"><span class="md__strong">Fill</span> тоже связан с непрозрачностью, но отличается в некоторых случаях; в практике занятия почти всегда используется <span class="md__strong">Opacity</span>.</div>
+</div>
+<h3 class="md__title md__title_third">Копирование и вставка</h3>
+<div class="md__list">
+<div class="md__list-elem"><span class="md__strong">Ctrl + A</span> — выделить всё.</div>
+<div class="md__list-elem"><span class="md__strong">Ctrl + C</span> — копирует содержимое активного слоя (по факту — только непустые пиксели слоя).</div>
+<div class="md__list-elem"><span class="md__strong">Ctrl + V</span> — вставляет содержимое буфера на новый слой (над выбранным на момент вставки), объект появляется по центру документа.</div>
+</div>
+<h3 class="md__title md__title_third">Дубликат слоя без смещения</h3>
+<div class="md__list">
+<div class="md__list-elem"><span class="md__strong">Ctrl + J</span> — дублировать активный слой целиком с сохранением расположения.</div>
+<div class="md__list-elem">Если есть выделение — <span class="md__strong">Ctrl + J</span> дублирует только выделенную часть на новый слой.</div>
+</div>
+<h3 class="md__title md__title_third">Вырезать на новый слой</h3>
+<div class="md__list">
+<div class="md__list-elem"><span class="md__strong">Shift + Ctrl + J</span> — вырезает выделенную область на новый слой (на старом слое эта область исчезает).</div>
+</div>
+<h3 class="md__title md__title_third">Удаление</h3>
+<div class="md__list">
+<div class="md__list-elem">Удалить слой целиком: выделить слой и нажать <span class="md__strong">Delete</span>.</div>
+<div class="md__list-elem">Стереть содержимое, но оставить слой:
+<div class="md__list">
+<div class="md__list-elem">сделать выделение;</div>
+<div class="md__list-elem">нажать <span class="md__strong">Delete</span> — удаляется только выделенное.</div>
+</div></div>
+</div>
+<h3 class="md__title md__title_third">Слияние и «скриншот на новый слой»</h3>
+<div class="md__list">
+<div class="md__list-elem"><span class="md__strong">Ctrl + E</span> — слить активный слой с нижележащим.</div>
+<div class="md__list-elem">Если выделить несколько слоёв — <span class="md__strong">Ctrl + E</span> сольёт выделенные слои в один.</div>
+<div class="md__list-elem">Не принято сливать слои, которые не идут подряд, чтобы не ломать логику расположения объектов.</div>
+<div class="md__list-elem"><span class="md__strong">Flatten Image</span> — сливает все слои в один.</div>
+<div class="md__list-elem"><span class="md__strong">Alt + Shift + Ctrl + E</span> — «слепить» всё видимое <span class="md__strong">на новый слой</span>
+ (как снимок текущей видимости). Если команда не срабатывает из-за 
+сложной структуры, создаётся новый пустой слой и команда применяется на 
+нём.</div>
+</div>
+<h3 class="md__title md__title_third">Группы слоёв</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Группировка нужна для удобства: логически связанные слои складываются в «папку».</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/chrome_fF8qUEuIdz.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Можно отключать видимость всей группы.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Команда: <span class="md__strong">Ctrl/Command + G</span>.</div>
+</div>
+<div class="md__list-elem">Разгруппировка используется редко.</div>
+</div>
+<h3 class="md__title md__title_third">Текстовые слои</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Текст — отдельный тип слоя; в Layers он помечается значком <span class="md__strong">T</span>.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/chrome_fVWOIPn1Vt.png" alt=""></div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Clipping Mask</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Применение: верхний слой (обслуживающий) показывается только в пределах нижнего (хозяйского/главного).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/chrome_GTCeiU8UFv.png" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/chrome_rSDvOHiFle.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Команды:</div>
+<div class="md__list">
+<div class="md__list-elem">контекстное меню: <span class="md__strong">Create Clipping Mask</span>;</div>
+<div class="md__list-elem">шорткат: <span class="md__strong">Alt + Ctrl + G</span>.</div>
+</div>
+</div>
+<div class="md__list-elem">В клиппинг-маску можно прикреплять и «обычные» слои, и корректирующие слои.</div>
+</div>
+<h3 class="md__title md__title_third">Как откреплять слои из клиппинга</h3>
+<div class="md__list">
+<div class="md__list-elem">Повтор <span class="md__strong">Alt + Ctrl/Command + G</span> на слое снимает клиппинг.</div>
+<div class="md__list-elem">Если откреплять слой внутри цепочки, могут 
+открепиться сразу все слои клиппинг-маски, потому что становится 
+непонятно, к чему крепить оставшиеся.</div>
+</div>
+<h3 class="md__title md__title_third">Быстрый просмотр одного слоя</h3>
+<div class="md__list">
+<div class="md__list-elem">Alt-клик по «глазику» слоя показывает только этот слой (остальные скрываются).</div>
+<div class="md__list-elem">Для слоёв в клиппинг-маске могут оставаться включёнными несколько глазиков из-за зависимости от хозяйского слоя.</div>
+</div>
+<h3 class="md__title md__title_third">Разлочить фон (Background)</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/chrome_Y4bFqU3jbV.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">Залоченный фон нельзя двигать и стирать «до прозрачности».</div>
+<div class="md__list-elem">Разлочивание:
+<div class="md__list">
+<div class="md__list-elem">дважды клик по фону (не по названию),</div>
+<div class="md__list-elem"><span class="md__strong">OK</span>.</div>
+</div></div>
+<div class="md__list-elem">После разлочивания фон становится обычным слоем: можно двигать, стирать ластиком до прозрачности.</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Недеструктивная обработка, Channel Mixer и Hue/Saturation</h1>
+<h3 class="md__title md__title_third">Корректирующие слои и недеструктивность</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Корректирующие слои создаются через иконку «половинка чёрного/белого круга» внизу панели слоёв.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/chrome_PBwHUmRP36.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Настройки активного корректирующего слоя показываются в палитре <span class="md__strong">Properties</span>.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/chrome_VLYndiiQMY.png" alt=""></div>
+</div>
+<div class="md__list-elem">Деструктивно: коррекция применяется прямо к пикселям (пример — кривые через <span class="md__strong">Ctrl/Command + M</span>). После подтверждения изменения «вшиваются» в пиксели, и дальше остаётся только история действий.</div>
+<div class="md__list-elem">Недеструктивно: коррекция сделана корректирующим слоем — её можно в любой момент выключить, удалить или изменить.</div>
+</div>
+<h3 class="md__title md__title_third">Набор корректирующих слоёв, на которые делается упор</h3>
+<div class="md__list">
+<div class="md__list-elem"><span class="md__strong">Curves</span> — основной.</div>
+<div class="md__list-elem"><span class="md__strong">Hue/Saturation</span> — основной для цвета.</div>
+<div class="md__list-elem"><span class="md__strong">Channel Mixer</span> — реже.</div>
+<div class="md__list-elem"><span class="md__strong">Solid Color</span> — служебный слой заливки.</div>
+</div>
+<h3 class="md__title md__title_third">Solid Color</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/chrome_bv0ag2PHyE.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">Слой полностью залит одним цветом как «описание заливки», а не как «пиксельный растр».</div>
+<div class="md__list-elem">По Solid Color нельзя рисовать кистью/ластиком как по обычному пиксельному слою.</div>
+</div>
+<h3 class="md__title md__title_third">Channel Mixer</h3>
+<div class="md__list">
+<div class="md__list-elem">В RGB цвет складывается из «мощностей» трёх 
+каналов (красный/зелёный/синий) — как «лампочки», которые могут гореть 
+сильнее/слабее.</div>
+<div class="md__list-elem">При высокой насыщенности объекта перекраска кривыми может давать плохой результат.</div>
+<div class="md__list-elem">Channel Mixer нужен, когда требуется <span class="md__strong">сильно перебросить информацию из одного канала в другой</span>, вплоть до перестановки каналов местами.</div>
+<div class="md__list-elem">Для выбранного канала задаётся «рецептура» (проценты R/G/B), из которых он будет состоять.</div>
+</div>
+<h3 class="md__title md__title_third">Приёмы из демонстрации Channel Mixer</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/chrome_HhSg8BBxRJ.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">Перестановка каналов местами (например, 
+положить 100% синего в красный и 100% красного в синий) меняет 
+светлотность каналов и даёт противоположное изменение цвета.</div>
+<div class="md__list-elem">Возможна смесь (условно 30–40–30) — Channel Mixer пересмешивает ч/б «картинки каналов» в заданной пропорции.</div>
+<div class="md__list-elem">Полезная команда из практики: <span class="md__strong">Shift + Ctrl + C</span> копирует «всё, что видно на экране» (copy merged), а не только активный слой.</div>
+</div>
+<h3 class="md__title md__title_third">Монохром в Channel Mixer</h3>
+<div class="md__list">
+<div class="md__list-elem">Режим <span class="md__strong">Monochrome</span> позволяет выводить выбранный канал (или смесь каналов) в ч/б виде.</div>
+<div class="md__list-elem">В курсе это нужно для получения ч/б канала недеструктивно и дальнейшего применения через режим наложения ради эффекта.</div>
+</div>
+<h3 class="md__title md__title_third">Hue/Saturation</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/chrome_yY2nlkVMJz.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">Hue/Saturation живёт в логике <span class="md__strong">HSB</span>:
+<div class="md__list">
+<div class="md__list-elem"><span class="md__strong">Hue</span> — оттенок,</div>
+<div class="md__list-elem"><span class="md__strong">Saturation</span> — насыщенность,</div>
+<div class="md__list-elem"><span class="md__strong">Brightness/Lightness</span> — яркость.</div>
+</div></div>
+<div class="md__list-elem">Концептуально логика «человеческая», но внутри идёт пересчёт в RGB.</div>
+</div>
+<h3 class="md__title md__title_third">Ползунки и взаимосвязи</h3>
+<div class="md__list">
+<div class="md__list-elem">Hue меняет оттенок.</div>
+<div class="md__list-elem">Saturation меняет насыщенность.</div>
+<div class="md__list-elem">Lightness меняет яркость.</div>
+<div class="md__list-elem">Lightness для выбранного цвета вмешивает белый/чёрный и тем самым понижает насыщенность.</div>
+<div class="md__list-elem">Saturation тоже может менять яркость, поэтому при правке одного параметра часто приходится корректировать соседний.</div>
+</div>
+<h3 class="md__title md__title_third">Работа по отдельным цветам и диапазон влияния</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Инструмент обычно применяется прицельно по выбранным цветам (красные/жёлтые/синие и т.д.), а не «на всю картинку».</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/chrome_lB2x7LVmIX.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">На шкале видно, какой участок оттенков выбран.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/chrome_lqBbPR1hdb.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Диапазон можно сдвигать и сужать:</div>
+<div class="md__list">
+<div class="md__list-elem">внутренние «лепестки» — зона, где коррекция действует в полную силу;</div>
+<div class="md__list-elem">между внутренними и внешними — зона плавного схода коррекции на нет.</div>
+</div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Ограничение по сильной перекраске</h3>
+<div class="md__list">
+<div class="md__list-elem">Большой сдвиг Hue (например, ±180) даёт неконтролируемые разноцветные области на границах диапазона.</div>
+<div class="md__list-elem">Hue/Saturation используется для небольших изменений оттенка (в пределах соседних оттенков, порядка 20–30 пунктов).</div>
+<div class="md__list-elem">Перекраску «через всю радугу» удобнее делать Channel Mixer, а Hue/Saturation — для тонкой доводки.</div>
+</div>
+<h3 class="md__title md__title_third">Связка Channel Mixer + Hue/Saturation</h3>
+<div class="md__list">
+<div class="md__list-elem">Channel Mixer делает «большой перелёт» в другую часть спектра.</div>
+<div class="md__list-elem">Hue/Saturation делает «тонкую доводку» оттенка/насыщенности/яркости уже в пределах близких значений.</div>
+</div>
+<h3 class="md__title md__title_third">Практика: компенсация после контраста</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Поднятие контраста мастер-кривой может дать чрезмерную насыщенность и неприятный скинтон.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Вместо поканального поднятия контраста применяется подход:</div>
+<div class="md__list">
+<div class="md__list-elem">поднять контраст мастер-кривой;</div>
+</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/chrome_VxdCDf1Hxe.jpg" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">сверху Hue/Saturation компенсировать оттенки кожи.</div>
+</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/nRdRqEEllX.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Для точной настройки диапазона применяется 
+«рентген»: временно ставится сильный сдвиг Hue (например, +180), чтобы 
+увидеть, что цепляется диапазоном; затем возвращаются нормальные 
+значения и делается аккуратная правка.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/qQQYO1NrnH.jpg" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/pULhKUdl1H.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">Нюанс про красные: разнос насыщенности через 
+Saturation может выбеливать красный; если нужно убрать насыщенность, 
+сохранив густоту тона, используется комбинация с Lightness.</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Тонирование, Blend If, Color &amp; Vibrance</h1>
+<h3 class="md__title md__title_third">Баланс белого и художественная логика</h3>
+<div class="md__list">
+<div class="md__list-elem">Баланс белого может быть холодным или тёплым.</div>
+<div class="md__list-elem">Не всегда нужно приводить баланс белого к 
+«правильному»: паразитный тёплый/холодный баланс белого может быть 
+художественным ходом.</div>
+<div class="md__list-elem">
+<div class="md__paragraph">В примере: вместо поканальной постановки 
+баланса белого делается экспонирование и корректировка оттенков жёлтых 
+через Hue/Saturation.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/qIzyYMfno2.jpg" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/chrome_LQoYDcNzKK.jpg" alt=""></div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Тонирование через Colorize</h3>
+<div class="md__list">
+<div class="md__list-elem">В Hue/Saturation есть режим <span class="md__strong">Colorize</span>: изображение тонируется в один цвет (с выбором оттенка и насыщенности).</div>
+</div>
+<h3 class="md__title md__title_third">Подмешивание синего в тени через Blend If</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Задача: добавить синеву именно в тени.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Последовательность:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">создать слой Hue/Saturation и включить Colorize (выбрать синий оттенок);</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/vyz53O023c.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">открыть <span class="md__strong">Layer Style</span> (двойной клик по области слоя справа от названия);</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">использовать <span class="md__strong">Blend If</span>:</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Current Layer</span> — текущий слой-тонировщик;</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Underlying Layer</span> — нижележащая картинка;</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">ограничить проявление тонировки по яркости нижележащего изображения (от чёрного до тёмно-серого);</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/chrome_JOuhIWQlts.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">расщепить границу ползунка с зажатым <span class="md__strong">Alt</span>, чтобы сделать переход мягким;</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/w2WRCTKo7Q.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">настроить <span class="md__strong">Opacity</span> слоя-тонировщика.</div>
+</div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Пример точечных правок Hue/Saturation по коже и фону</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Слишком ядреный синий:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/chrome_9XZYHP9Y2h.jpg" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">взять синий пипеткой;</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">пипеткой с плюсиком расширить диапазон;</div>
+</div>
+<div class="md__list-elem">снизить насыщенность и подобрать Hue/Lightness так, чтобы цвет не бил по глазам.</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Коррекция в более циановый только по коже (исключая фон):</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">переключиться на циановый</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">временно поставить Hue на +180, чтобы увидеть «что цепляется»;</div>
+</div>
+<div class="md__list-elem">сузить/сдвинуть диапазон лепестками так, чтобы влияние было на коже, а не на фоне;</div>
+</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/xi2x0lti53.jpg" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">вернуть Hue обратно и выполнить аккуратную коррекцию.</div>
+</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/oYq6sErzYn.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Исправление «рвущегося» цвета: если часть уже
+ ушла из синего в мадженту, диапазон влияния (маджента) сдвигается, 
+чтобы выровнять насыщенность.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/Oc7y0VEGLu.jpg" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/9mnvlw470S.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Убор жёлтой тени (например, под носом): уйти в
+ жёлтые, временно +180 для проверки диапазона, затем сделать оттенок 
+более красноватым, светлее и менее насыщенным.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/Zssdgt3JW1.jpg" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/SjBUKhnx2S.jpg" alt=""></div>
+</div>
+</div>
+<h3 class="md__title md__title_third">«Выжать жёлтый» и роль порядка слоёв</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Усиление жёлтого достигается снижением синего через Curves.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/chrome_qXCQu4CeEz.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">При насыщенном фоне кожа может визуально казаться «мертвой», поэтому принято подмешивать цвета фона в кожу.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Hue/Saturation можно положить <span class="md__strong">под</span> слоем Curves, который «пожелтит» картинку:</div>
+<div class="md__list">
+<div class="md__list-elem">снизу останется различие между жёлтым и красновато-оранжевым;</div>
+<div class="md__list-elem">по этому различию Hue/Saturation цепляется за кожу и сдвигает её в более оранжевую сторону.</div>
+</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/jgmTuMgW5s.jpg" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/f8bL6wGClU.jpg" alt=""></div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Color &amp; Vibrance</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Корректирующий слой объединяет четыре ползунка:</div>
+<div class="md__list">
+<div class="md__list-elem"><span class="md__strong">Temperature</span> и <span class="md__strong">Tint</span> (баланс белого как ползунки),</div>
+<div class="md__list-elem"><span class="md__strong">Vibrance</span> и <span class="md__strong">Saturation</span>.</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Use Legacy</span> включает старый математический алгоритм.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Разница Vibrance и Saturation:</div>
+<div class="md__list">
+<div class="md__list-elem">Saturation действует линейно по всем пикселям;</div>
+<div class="md__list-elem">Vibrance сильнее влияет на мало насыщенные пиксели и слабее — на сильно насыщенные.</div>
+</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/tqrf681ymv.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">Практический смысл: аккуратно поднять 
+насыщенность, «донесытив» малонасыщенные объекты, и комбинацией 
+Vibrance/Saturation выровнять насыщенность элементов с одинаковым 
+оттенком.</div>
+</div>
+<h3 class="md__title md__title_third">Порядок корректирующих слоёв</h3>
+<div class="md__list">
+<div class="md__list-elem">Каждый последующий корректирующий слой получает всю нижележащую картинку.</div>
+<div class="md__list-elem">Просчёт слоёв идёт снизу вверх.</div>
+<div class="md__list-elem">Перестановка двух корректирующих слоёв 
+местами меняет результат, потому что меняется, какая версия изображения 
+«скармливается» следующему слою.</div>
+</div>
+<h3 class="md__title md__title_third">Тонирование</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Тонирование — изменение оттенков с целью эстетической гармонизации.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Примерная логика результата:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">база: <span class="md__strong">low-contrast</span> — поднять точку чёрного с фиксацией средних тонов, чтобы тени стали мягче и менее «мусорными»;</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/chrome_06sJtXOUjK.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">охладить тени: поднять точку чёрного в синем 
+канале, немного в зелёном, и убрать красный в тенях (при фиксированной 
+правой части диапазона);</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/scvNpEuTlp.jpg" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/1ThqdriZRR.jpg" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/pFMWsLtpaO.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">слегка потеплить света: опустить точку белого
+ в синем канале, при необходимости чуть компенсировать зелёным, чтобы 
+света не стали «лимонными»;</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/qkvShvs01s.jpg" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/cdvWTgrd8X.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">поднять общую насыщенность;</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/HCpKnhMc9q.jpg_" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">отдельно приглушить синюю одежду через Hue/Saturation</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2006_files/chrome_0SzHAYy5mV.jpg" alt=""></div>
+</div>
+</div>
+</div>
+<div class="md__list-elem">Отдельный вывод по порядку: слой, который 
+убирает синюю насыщенность одежды, располагается ниже слоёв, которые 
+усиняют тени, чтобы одежда корректировалась до общего усинения.</div>
+</div>
+    </div>
+                    </div>
+</body></html>
