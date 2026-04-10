@@ -1,0 +1,575 @@
+<html><head>
+        <title>Adobe Photoshop: современная обработка изображений, занятие №8</title>
+                    <link rel="stylesheet" href="Lesson%2008_files/main.4708.min.css">
+</head>
+    <body class="vsc-initialized">
+        <div class="wrapper">
+                <div class="content-wrapper page-wrapper page-wrapper--bottom">
+        <div class="title">Adobe Photoshop: современная обработка изображений, занятие №8</div>
+        <h1 class="md__title md__title_first">Содержание</h1>
+<div class="md__list">
+<div class="md__list-elem">Маски слоя и выделения: базовая теория</div>
+<div class="md__list-elem">Логика обработки</div>
+<div class="md__list-elem">Комбинирование масок, копирование и сохранение, Quick Mask</div>
+<div class="md__list-elem">Object Selection Tool и Select Subject: выделение объектов в практике</div>
+<div class="md__list-elem">Организация коррекций по маскам</div>
+<div class="md__list-elem">Практические кейсы обработки</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Маски слоя и выделения: базовая теория</h1>
+<h3 class="md__title md__title_third">Что такое маска слоя</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Маска слоя прикрепляется к слою кнопкой <span class="md__strong">Add Layer Mask</span>.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_7k0KOm8o2z.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Маска — это «карта видимости» слоя:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_VtmDf5pPDs.png" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_7FGJgltdi7.png" alt="enter image description here"></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">белое</span> на маске — слой <span class="md__strong">виден</span>;</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">чёрное</span> на маске — слой <span class="md__strong">не виден</span>;</div>
+</div>
+<div class="md__list-elem"><span class="md__strong">серое</span> — слой <span class="md__strong">виден частично</span> (полупрозрачность), чем темнее серый, тем меньше видно.</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Важно различать, что активно:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">если рамка выделяет <span class="md__strong">слой</span>, изменения идут по слою;</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/WVTW1cde4t.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">если рамка выделяет <span class="md__strong">маску</span>, изменения идут по маске.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_YB93Fl3qXk.png" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Быстрые действия с маской</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Alt‑клик по маске</span> — просмотр содержимого маски.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_4qaQhHTcn6.png" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_pdLGosuFRR.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Shift‑клик по маске</span> — временно отключить/включить маску (появляется крестик).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_Bkg6DrMjZq.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Связь слоя и маски:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">значок «цепочки» между слоем и маской связывает их движение;</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_fyfW07S3hT.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">если «цепочку» отключить, можно двигать <span class="md__strong">слой отдельно</span> или <span class="md__strong">маску отдельно</span>.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/cwIUloirJw.png" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Удаление и применение маски</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Надёжные способы удалить маску без сюрпризов:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">перетащить маску на «корзину»;</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_Dz2C0R6HYp.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">контекстное меню по маске → <span class="md__strong">Delete Layer Mask</span>.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_fnIQPK7lxv.png" alt=""></div>
+</div>
+</div>
+</div>
+<div class="md__list-elem"><span class="md__strong">Apply Layer Mask</span> применяет непрозрачности маски к слою, после чего маску нельзя редактировать как маску.</div>
+</div>
+<h3 class="md__title md__title_third">Маска из выделения</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Command/Control‑клик по миниатюре слоя</span> загружает выделение по непрозрачным пикселям слоя.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_g5p2VBpQTV.png" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_2Ns3iGh0nZ.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Если при создании маски есть активное выделение, маска создаётся <span class="md__strong">по текущему выделению</span>:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_Bm9f5OIG0P.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">там, где «бежит пунктир», маска становится белой;</div>
+</div>
+<div class="md__list-elem">остальное становится чёрным.</div>
+</div>
+</div>
+<div class="md__list-elem">Если выделения нет, создаётся <span class="md__strong">белая</span> маска.</div>
+</div>
+<h3 class="md__title md__title_third">Свойства маски: Density и Feather</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_AmnJG5XwSg.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Density</span> уменьшает «силу» маски: при 0 маска становится по сути белой.</div>
+</div>
+<div class="md__list-elem"><span class="md__strong">Feather</span> размывает маску и создаёт серые градации на границе (степень проявленности слоя - чем белее, тем непрозрачней слой с маской).</div>
+</div>
+<h3 class="md__title md__title_third">Инверсия маски</h3>
+<div class="md__list">
+<div class="md__list-elem">Command/Control + i - инверсия маски превращает белое в чёрное и наоборот (маска была белая → стала чёрная).</div>
+</div>
+<h3 class="md__title md__title_third">Группы и маски</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Слои можно складывать в <span class="md__strong">группу</span> (Command/Control + G).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_L5mfjkjlpD.png" alt="">    </div>
+</div>
+<div class="md__list-elem">У каждого слоя может быть своя маска, и у группы тоже может быть своя маска.</div>
+</div>
+<h3 class="md__title md__title_third">Изменение размера выделения</h3>
+<div class="md__list">
+<div class="md__list-elem">Команды <span class="md__strong">Select → Modify → Contract/Expand</span> уменьшают или увеличивают выделение на заданное количество пикселей.</div>
+</div>
+<h3 class="md__title md__title_third">Color Range</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Select → Color Range</span> создаёт выделение по цвету без чётких границ.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_AtdlSi6kEo.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Инструменты внутри Color Range:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_WPgRnivo3l.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">пипетка — выбрать цвет;</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">пипетка с «плюсом» — добавить цвета;</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">пипетка с «минусом» — убрать цвета;</div>
+</div>
+<div class="md__list-elem"><span class="md__strong">Fuzziness</span> — строгость отбора: больше значение → выделение «шире» по похожим цветам</div>
+</div>
+</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Логика обработки</h1>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Выделить нужную область пикселей → дать ей одну коррекцию; выделить другую область → дать другую коррекцию.</div>
+</div>
+<div class="md__list-elem">Маски + кривые + Hue/Saturation позволяют сделать большую часть обработки; для следующего шага нужны режимы наложения.</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Комбинирование масок, копирование и сохранение, Quick Mask</h1>
+<h3 class="md__title md__title_third">Комбинирование масок</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">«Сложение/вычитание/пересечение» масок на практике реализуется логикой слоёв:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">одна маска может быть на группе, другая — на слое внутри;</div>
+</div>
+<div class="md__list-elem">дополнительная чёрная маска с прорисовкой белой кистью даёт «пересечение» с маской группы.</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Пример логики «пересечения»:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">группа ограничивает влияние по персонажу;</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">внутри группы на отдельном корректирующем слое маска чёрная, и белой кистью проявляется только кожа;</div>
+</div>
+<div class="md__list-elem">штрихи, выходящие за границы персонажа, отсеиваются маской группы.</div>
+</div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Копирование элементов маски</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Можно скопировать маску целиком или её часть:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">перейти в просмотр маски → выделить всё → скопировать;</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">вставить как отдельный слой;</div>
+</div>
+<div class="md__list-elem">затем вставить обратно в другую маску.</div>
+</div>
+</div>
+<div class="md__list-elem">Практичный подход: сделать «болваночный» 
+слой, создать на нём нужный элемент маски, отключить слой и использовать
+ его как заготовку для вставки.</div>
+</div>
+<h3 class="md__title md__title_third">Выделение по маске</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Command/Control‑клик по миниатюре <span class="md__strong">маски</span> загружает выделение, которое могло бы создать такую маску.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Дальше выделение можно:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">инвертировать (Shift + Command/Control + I);</div>
+</div>
+<div class="md__list-elem">заливать на другой маске белым/чёрным, комбинируя области.</div>
+</div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Quick Mask</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Режим Quick Mask включается/выключается клавишей <span class="md__strong">Backslash ()</span>.</div>
+</div>
+<div class="md__list-elem">Если «всё стало красным», причина часто в случайном включении Quick Mask; выключение возвращает обычный режим.</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Object Selection Tool и Select Subject: выделение объектов в практике</h1>
+<h3 class="md__title md__title_third">Object Selection Tool</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_W1xt828prR.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Инструмент выделяет объекты «по смыслу» и может работать очень точно по рукам, голове и другим частям.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_i13bD00XIC.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Режимы выделения:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_fyBa2nGOgD.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">прямоугольником (Rectangle);</div>
+</div>
+<div class="md__list-elem">лассо (Lasso) — полезно для диагональных и сложных элементов.</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">В настройках важны:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_J48iypUftY.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Sample All Layers</span> — искать объекты по всей «схлопнутой» картинке, а не только по текущему слою;</div>
+</div>
+<div class="md__list-elem"><span class="md__strong">Hard Edges</span> — характер границы выделения.</div>
+</div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Select Subject</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_k1NYNiGcvN.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Select Subject выделяет главный объект на фотографии.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Выделение можно дорабатывать:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Shift — добавление к выделению;</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Alt/Option — вычитание из выделения;</div>
+</div>
+<div class="md__list-elem">при необходимости — обычным Lasso.</div>
+</div>
+</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Организация коррекций по маскам</h1>
+<h3 class="md__title md__title_third">Послойная организация коррекций</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Типовой шаг: создать корректирующий слой по выделению (выделение становится маской).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_3AWdHkwGyV.png" alt="">    </div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Если нужно много коррекций на одну область:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">слой кладётся в группу;</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">маска перетаскивается на группу;</div>
+</div>
+<div class="md__list-elem">внутрь группы добавляются остальные корректирующие слои.</div>
+</div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Воздействие на часть выделения маски</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Если слой лежит внутри группы, на которой маска «пропускает» коррекцию на весь фон, коррекция будет действовать на весь фон.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Чтобы ограничить действие только на нижнюю часть фона:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">использовать уже существующий слой, который влияет только на низ;</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">поставить новый корректирующий слой <span class="md__strong">клиппинг‑маской</span> к нижележащему слою (Alt + Ctrl/Command + G)</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_d8LGxSivuI.png" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Перенос и дублирование масок</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Маску можно:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">перетащить на другой слой (перемещение);</div>
+</div>
+<div class="md__list-elem">перетащить с зажатым Alt/Option (дублирование).</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Если маски должны быть строго одинаковыми, предпочтительнее:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">клиппинг‑маска (одна общая маска на нижнем слое), либо</div>
+</div>
+<div class="md__list-elem">группа в группе с одной общей маской,<br>
+чтобы не редактировать две одинаковые маски вручную.</div>
+</div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Сохранение маски «на будущее»</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Вариант 1: хранить маски как слои в отдельной технической группе (выключить глазик).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_pPyA45zosL.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Вариант 2: загрузить выделение по маске (Command/Control‑клик) и выполнить <span class="md__strong">Select — Save Selection</span>, сохранив выделение как канал. И при необходимости потом загрузить через через Cmd/Ctrl+клик.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_rV1OONJtaI.png" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_NA2IQuCLUI.png" alt=""></div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Логика сложения и вычитания выделений по миниатюрам</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Command/Control‑клик по миниатюре загружает выделение.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Добавление/вычитание выделения задают дополнительные модификаторы:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">+ Shift</span> добавляет;</div>
+</div>
+<div class="md__list-elem"><span class="md__strong">+ Alt/Option</span> вычитает.</div>
+</div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Select Subject: обработка на устройстве или в облаке</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_aAEYhPVRHm.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">В настройках Select Subject может быть выбор, где выполняется выделение:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">на компьютере (используются ресурсы устройства, модель соответствует версии программы);</div>
+</div>
+<div class="md__list-elem">в облаке (может быть доступ к более новой модели, зависит от скорости интернета).</div>
+</div>
+</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Практические кейсы обработки</h1>
+<h3 class="md__title md__title_third">Отдельная коррекция для героя и для фона</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Для героя:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">загрузка выделения героя;</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">корректирующий слой Curves по выделению;</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">слой складывается в группу, маска переносится на группу.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_oIGThU52qB.png" alt="">        </div>
+</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Для рук:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">руки выделяются через Select Object с добавлением/вычитанием (включая исключение часов);</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">создаётся маска, инвертируется (Ctrl/Command + I);</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_HtdT29UkLI.png" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_S9ZtyBPiIV.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">затем на маске выполняется отдельная 
+коррекция (в данном случае деструктивными кривыми через Cmd/Ctrl+M), 
+чтобы руки осветлялись слабее.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_AzXJqymCFq.png" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/6JFUnpQdKe.png" alt=""></div>
+</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Для фона:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">активация выделения по герою (Cmd+клик по маске)</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">инверсия выделения (Shift + Command/Control + I);</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">отдельная группа фона с маской;</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">градиентом из чёрного в прозрачный ограничивается, где коррекция действует.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_0pFADDSw5g.png" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Важное правило про «вклеенность» объектов</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">При коррекции по маскам важно не допускать, чтобы объект выглядел «вклеенным».</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Ключевая проверка: объекты, отражающие свет, не могут быть ярче источника света.</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">В пасмурный день источник света — небо, и объект не должен становиться светлее неба.</div>
+</div>
+<div class="md__list-elem">Исключение возможно при особых погодных 
+условиях (например, когда солнце освещает объект сзади фотографа, а в 
+кадре тёмные тучи), но это отдельный сценарий.</div>
+</div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Рекомпозиция: удаление объекта с фона</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Объект дублируется на отдельный слой и маскируется.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_38KxLaAM1g.jpg" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_UnmKG25mol.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Выделение загружается по маске, слой с объектом временно отключается.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Выделение расширяется (пример: на 50 px для хайреза), чтобы точно захватить волосы и мелкие элементы.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Командой удаления Remove объект стирается с фона.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_5j8jMArcYA.png" alt=""></div>
+<div class="md__paragraph">Созданная заплатка на новом слое</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_fETGePSn57.png" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/IQ9yjtFmdm.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Временно отключенный слой можно двигать и масштабировать.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_cq2wVQxAYB.png" alt="enter image description here"></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/vaYjJAuXQx.jpg" alt=""></div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Рекомпозиция через маски и подрисовку</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Маска персонажа переносится на группу.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Для проблемных мест по краю волос применяется быстрый ремонт</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">создание нового слоя, взятие пипеткой цвета 
+тёмных волос и подрисовка мягкой кистью по краю (цветом), которая затем 
+«пропускается» через маску.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_kCZpIVpgvk.png" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_dinSsHc9EL.jpg" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/fLLH5FlxDr.jpg" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Создание глубины: локальное осветление/затемнение фона</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Делается разделение: передний план светлее, глубина темнее.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Используется вложенная структура групп:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_lws4wFC13U.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">группу фона, где уже отделена девочка,</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_YRuP5bYZXt.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">группа с маской конкретного объекта фона,</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_2cCjZGuMj9.png" alt="">        </div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">внутри — Curves и дополнительная пустая маска, чтобы осветление проявлялось только в нужном углу.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_GZKI9FqD1I.png" alt=""></div>
+</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Параллельно создаётся группа «всё кроме стены», внутри которой затемняются разные участки фона кистью и градиентом.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2008_files/chrome_HvYsyQ6Qmc.png" alt=""></div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Практические советы по выделению</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Если объект граничит с краем кадра, при 
+выделении не тянуть Object Selection Tool от самой границы — оставлять 
+небольшой «зазор», чтобы выделение работало стабильнее.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Если Select Subject выделяет плохо:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">временно осветлить картинку и попробовать Select Subject ещё раз;</div>
+</div>
+<div class="md__list-elem">дальше дочищать Select Object + Lasso.</div>
+</div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Локальные правки по деталям</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Если небольшой участок «вылетает» по яркости (например, угол дивана):</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">корректирующий слой затемнения в клиппинг‑маске;</div>
+</div>
+<div class="md__list-elem">градиентом ограничить влияние (например, только на левую часть).</div>
+</div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Доводка масок по краям (волосы и щетина)</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Если фоновая коррекция «задевает» край волос не так, как нужно:</div>
+<div class="md__list">
+<div class="md__list-elem">мягкой белой кистью аккуратно пропустить фоновую коррекцию по краюшку волос, работая краем кисти.</div>
+</div>
+</div>
+<div class="md__list-elem">Для щетины используется полупрозрачная кисть (пример: 50% непрозрачности), чтобы переход был мягким.</div>
+</div>
+    </div>
+                    </div>
+</body></html>
