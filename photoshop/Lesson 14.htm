@@ -1,0 +1,519 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Adobe Photoshop: современная обработка изображений, занятие №14</title>
+                    <link rel="stylesheet" href="Lesson%2014_files/main.4710.min.css">
+    </head>
+    <body class="vsc-initialized">
+        <div class="wrapper">
+                <div class="content-wrapper page-wrapper page-wrapper--bottom">
+        <div class="title">Adobe Photoshop: современная обработка изображений, занятие №14</div>
+        <h1 class="md__title md__title_first">Содержание</h1>
+<div class="md__list">
+<div class="md__list-elem">Яркостные маски из каналов на примере синей подсветки</div>
+<div class="md__list-elem">Яркостная маска для объёма на портрете и «интерактивная маска» через Channel Mixer</div>
+<div class="md__list-elem">Обтравка волос: почему не «в лоб» и чем заменять</div>
+<div class="md__list-elem">Маска насыщенности</div>
+<div class="md__list-elem">Маска насыщенности без LUT: HSB/HSL</div>
+<div class="md__list-elem">Комбинирование масок: оттенок + яркость + насыщенность</div>
+<div class="md__list-elem">Кейсы: отделение объектов по насыщенности и по оттенку через Difference</div>
+<div class="md__list-elem">Экшены</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Яркостные маски из каналов на примере синей подсветки</h1>
+<div class="md__paragraph">Задача: поднять яркость всей картинки, <span class="md__strong">кроме</span> уже ярких синих элементов подсветки. Важный вывод: иногда быстрее и чище сделать маску не через Color Range, а прямо из канала.</div>
+<h3 class="md__title md__title_third">Color Range</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Выделить синие участки (пипеткой «потыкать» по синему).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_UsICRd7kf3.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Создать <span class="md__strong">Curves</span> — выделение загрузится в маску.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Инвертировать маску, чтобы осветление не проходило на синий.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_QW3Fn9HsCK.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">Нюанс: маска может «проползти» и дать обрезанное влияние (часть изображения перестаёт осветляться слишком рано).</div>
+</div>
+<h3 class="md__title md__title_third">Каналы</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Открыть <span class="md__strong">Channels</span> и посмотреть, где контраст между синим и остальным наиболее удобен.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">В примере подходит <span class="md__strong">Red channel</span>: синие элементы становятся тёмными.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_ByRRs8VfOb.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Загрузить выделение по каналу: <span class="md__strong">Cmd/Ctrl + клик по пиктограмме канала</span></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_060dsXhwPT.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Вернуться на композитный RGB, создать <span class="md__strong">Curves</span> — выделение загрузится в маску.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_VEn38goATX.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Внутри маски (Alt-клик по маске) вызвать деструктивные кривые для маски - <span class="md__strong">Curves: Cmd/Ctrl + M</span>.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Подтянуть точку белого/чёрного (убрать «дырки» в гистограмме маски), сделать маску более полезной.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_RKSybFP8yz.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">По этой маске аккуратно поднять яркость.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_4r4A948jRB.jpg" alt="enter image description here"></div>
+</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Яркостная маска для объёма на портрете и «интерактивная маска» через Channel Mixer</h1>
+<div class="md__paragraph">Здесь цель — сделать свет на лице менее плоским, «вытянуть блики» и добавить объём. </div>
+<h3 class="md__title md__title_third">Вариант: выделить мальчика → маска → Curves</h3>
+<div class="md__list md__list_ordered">
+<div class="md__list-elem">
+<div class="md__paragraph">Выделить мальчика:</div>
+<div class="md__list">
+<div class="md__list-elem"><span class="md__strong">Select Subject</span> (быстрый старт выделения объекта).</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Создать корректирующий слой <span class="md__strong">Curves</span> — выделение загрузится в маску автоматически.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Корректировать кривыми яркость/контраст внутри выделенной области.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">При необходимости уточнить маску:</div>
+<div class="md__list">
+<div class="md__list-elem">зайти в маску и подрисовать кистью (добавить/убрать зоны влияния), чтобы коррекция не лезла на фон.</div>
+</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_mTHkqHsu8c.png" alt=""></div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Яркостная маска из канала</h3>
+<div class="md__list md__list_ordered">
+<div class="md__list-elem">
+<div class="md__paragraph">Оценить, в каком канале рельеф читается лучше (в примере выбиралось между Blue и Green).</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Загрузить выделение по выбранному каналу (<span class="md__strong">Cmd/Ctrl + клик по каналу</span>).</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Создать Curves и работать по маске.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Если нужно — отредактировать маску (Alt-клик по маске, Curves внутри маски).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_bqnmH4l85H.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Ограничить влияние (например, чтобы не лезло на одежду): дорисовать/вырезать по маске группы.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_czHk84C2Uh.png" alt=""></div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Проблема «фиксированной» пиксельной маски</h3>
+<div class="md__paragraph">Если после создания маски ретушь на 
+изображении меняется (прыщики убрали, детали поменялись), в маске 
+остаётся «старый рельеф», и маску приходится перестраивать заново.</div>
+<h3 class="md__title md__title_third">«Интерактивная маска»</h3>
+<div class="md__paragraph">Идея: сформировать локализованный контраст через <span class="md__strong">Channel Mixer (Monochrome)</span>, положить в <span class="md__strong">Overlay</span>, а затем ограничить влияние через <span class="md__strong">Blend If</span> (Layer Style).</div>
+<h4 class="md__title md__title_fourth">Последовательность</h4>
+<div class="md__list md__list_ordered">
+<div class="md__list-elem">
+<div class="md__paragraph">Создать корректирующий слой <span class="md__strong">Channel Mixer</span>.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Включить <span class="md__strong">Monochrome</span>.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Вывести один канал (пример логики):</div>
+<div class="md__list">
+<div class="md__list-elem">0 Red, 0 Green, 100 Blue — для синего канала или аналогично для зеленого, если он подходит.</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Значение канала - увеличения до 200% и 
+Constant - отрицательное значение) - условный аналог воздействия 
+контрастной кривой на яркостную маску.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_IZobBB6VBt.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Перевести слой в <span class="md__strong">Overlay</span>.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Открыть <span class="md__strong">Layer Style → Blend If</span> (двойной клик по слою) и запретить слою проявляться в тенях:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_VasVErSvUw.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">Current и Underlying Layer расщеплением Alt/Option** в границы значений черного и белого.</div>
+</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_Y9QGvRCBdv.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Воздействие и интенсивность проявляется либо по маске в нужных местах</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_MpUsGZ67m2.png" alt=""></div>
+<div class="md__paragraph">И/или прозрачностью слоя</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_HDBsZddIuj.png" alt="">   </div>
+</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Обтравка волос: почему не «в лоб» и чем заменять</h1>
+<div class="md__paragraph">Прямой «вырез волос» часто физически выглядит
+ плохо из-за полупрозрачности, расфокуса и смешивания с фоном. Поэтому 
+во многих кейсах лучше менять фон/свет и использовать режимы наложения, а
+ для сложных переносов — подключать AI.</div>
+<h3 class="md__title md__title_third">Волосы сложно обтравливать</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Волосы ведут себя как <span class="md__strong">полупрозрачная фактура</span>: тонкие пряди + расфокус → нет чётких границ, через них просвечивает фон.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Полупрозрачная маска в проблемной зоне покажет не «чистые волосы», а <span class="md__strong">смесь волос + цвет фона</span>.</div>
+</div>
+<div class="md__list-elem">Если исходный свет не предполагает контрового
+ отделения, перенос на противоположный фон (например, на чёрный) 
+выглядит неестественно.</div>
+</div>
+<h3 class="md__title md__title_third">Select Subject и Select and Mask</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Select Subject</span> даёт «неплохую, но не идеальную» маску: для цветокоррекции может хватить, для коллажей — часто нет.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_nexWYkDUGA.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">В маске можно открыть <span class="md__strong">Select and Mask</span> и использовать кисть refinement:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_tyViYoNN2m.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Кисточка, которая пытается искать волосы и модифицировать маску.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_5dXl10UhMm.png" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_otDNjOmSad.jpg" alt="">       </div>
+<div class="md__paragraph">Но итоговый результат будет средним.</div>
+</div>
+</div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Подход «модифицировать фон вместо обтравки волос» (кейс с серым фоном)</h3>
+<div class="md__list md__list_ordered">
+<div class="md__list-elem">
+<div class="md__paragraph">Исходный фон серый (тёмно-серый, но всё ещё серый).</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Сделать фон более похожим на облачное небо через <span class="md__strong">Curves</span>:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">поднять яркость,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">слегка сместить оттенок (пример: синий вверх, красный чуть вниз),</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_DZ43pYgUVn.jpg" alt=""></div>
+</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">По грубой маске кистью ограничить влияние на 
+волосы так, чтобы осветление «проползало на кончики», но не входило в 
+основную массу волос.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_coVmqOh6PM.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Наложить небо отдельной картинкой в <span class="md__strong">Overlay</span>, дополнительно убрать лишнюю синеву фона <span class="md__strong">Hue/Saturation</span>.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_bv47YAz4fY.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Дальше — <span class="md__strong">Dodge &amp; Burn</span> на среднесером слое в Soft Light:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_GRntqWj4bz.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">белой/чёрной кистью с небольшой непрозрачностью осветлить/затемнить,</div>
+</div>
+<div class="md__list-elem">проявлять по грубой маске.</div>
+</div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Маска насыщенности +  Darken</h3>
+<div class="md__paragraph">Маска насыщенности +  <span class="md__strong">Darken</span> при замене светлого фона на тёмный помогает перенести тёмные волосы и тени:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_0wrlbaXQZn.jpg" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_NXWP2chaWX.png" alt=""></div>
+<h3 class="md__title md__title_third">Cложные переносы волос</h3>
+<div class="md__paragraph">Для переноса на «противоположный» фон (темные волосы со светлого на темный, к примеру) стоит использовать AI.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_sZafInq0J7.jpg" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_HeTL4dZuJb.jpg" alt=""></div>
+<hr>
+<h1 class="md__title md__title_first">Маска насыщенности</h1>
+<div class="md__paragraph">Смысл: получить ч/б карту, где светлое = 
+более насыщенное, тёмное = менее насыщенное, и на основе этой карты 
+строить маски для точных коррекций.</div>
+<h3 class="md__title md__title_third">LUT (условно)</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">LUT — «особый вид RGB цветокоррекции» и формат хранения коррекции.</div>
+</div>
+<div class="md__list-elem">Таблица, где «какой цвет → в какой перекрашиваем».</div>
+</div>
+<h3 class="md__title md__title_third">LUT в Photoshop</h3>
+<div class="md__list md__list_ordered">
+<div class="md__list-elem">
+<div class="md__paragraph">Файлы LUT копируются в папку Photoshop:</div>
+<div class="md__list">
+<div class="md__list-elem"><span class="md__strong">Presets → 3DLUTs</span>.</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Photoshop нужно <span class="md__strong">закрыть и перезапустить</span>, чтобы LUT появились в списке.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Применение:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">создать корректирующий слой <span class="md__strong">Color Lookup</span>,</div>
+</div>
+<div class="md__list-elem">выбрать нужный LUT из выпадающего списка.</div>
+</div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Получение «заготовки» маски насыщенности</h3>
+<div class="md__list md__list_ordered">
+<div class="md__list-elem">
+<div class="md__paragraph">Наложить Color Lookup с техническим LUT → получить ч/б картинку насыщенности.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Сделать «слепок видимого» в новый слой:</div>
+<div class="md__list">
+<div class="md__list-elem"><span class="md__strong">Stamp Visible:</span> Windows <span class="md__strong">Ctrl + Alt + Shift + E</span>, macOS <span class="md__strong">Cmd + Option + Shift + E</span>.</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Удалить LUT-слой: «он отработал и сделал свою работу».</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Сделать заготовку полноконтрастной:</div>
+<div class="md__list">
+<div class="md__list-elem"><span class="md__strong">Auto Levels:</span> Windows <span class="md__strong">Shift + Ctrl + L</span>, macOS <span class="md__strong">Shift + Cmd + L</span>.</div>
+</div>
+</div>
+<div class="md__list-elem">Подконтрастить маску так, чтобы светлыми остались только зоны, на которые нужна коррекция.</div>
+</div>
+<h3 class="md__title md__title_third">Коррекция кожи по маске насыщенности (логика)</h3>
+<div class="md__list md__list_ordered">
+<div class="md__list-elem">
+<div class="md__paragraph">Скопировать заготовку (Ctrl/Cmd + A, Ctrl/Cmd + C).</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Создать корректирующий слой <span class="md__strong">Hue/Saturation</span>.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Войти в маску (Alt/Option при клике по маске) и вставить заготовку (Ctrl/Cmd + V).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/bFACnwelGp.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">По маске снизить насыщенность в самых насыщенных участках (губы при необходимости исключить).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_ABs4rYzgvI.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Затем сделать второй Hue/Saturation - поднять общую насыщенность уже после того, как «привели кожу к одному знаменателю».</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_zWSZhrZdDO.png" alt=""></div>
+</div>
+<div class="md__list-elem">Для стабильной светотени перевести корректирующие слои в режим наложения <span class="md__strong">Color</span>, чтобы не трогать яркостную составляющую.</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Маска насыщенности без LUT: HSB/HSL</h1>
+<div class="md__paragraph">Если LUT нет, маску насыщенности можно 
+получить нативно. Суть: перевести изображение в HSB или HSL и взять 
+канал, где живёт насыщенность.</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Перевести изображение в <span class="md__strong">HSB</span> или <span class="md__strong">HSL</span> - <span class="md__strong">Filter → Other → HSB/HSL</span>.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_mGU2n1NAEm.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">В этих пространствах каналы распределяются так:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Red — кодирование оттенков,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Blue — яркостная составляющая,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph"><span class="md__strong">Green — насыщенность</span>.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_KXlxxkK7KL.png" alt=""></div>
+</div>
+</div>
+</div>
+<div class="md__list-elem">Выбрать, что «больше нравится под задачу»: HSB или HSL, потому что математика перерасчёта немного отличается.</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Комбинирование масок: оттенок + яркость + насыщенность</h1>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Сначала исключить из изображения всё, что не 
+относится к нужному оттенку (обесцветить всё, кроме нужных оттенков), а 
+уже потом делать маску насыщенности.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Делать <span class="md__strong">маску оттенков</span> через:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Hue/Saturation,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">перевод слоя в <span class="md__strong">Difference</span>,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">слепок результата,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">выбор наиболее контрастного канала,</div>
+</div>
+<div class="md__list-elem">Auto Levels.</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Делать <span class="md__strong">яркостную маску</span> из композитного канала:</div>
+<div class="md__list">
+<div class="md__list-elem"><span class="md__strong">Cmd/Ctrl + клик по RGB (композитному)</span> → «усреднённое выделение по яркости всех трёх».</div>
+</div>
+</div>
+</div>
+<h3 class="md__title md__title_third">Как объединять маски</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Сначала определять, <span class="md__strong">по какому признаку проще всего отделить</span> нужную зону: <span class="md__strong">оттенок</span>, <span class="md__strong">яркость</span> или <span class="md__strong">насыщенность</span>.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Делать по одному «черновику» маски под каждый признак (маска оттенка / яркостная маска / маска насыщенности).</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Дальше объединять маски в зависимости от задачи:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">когда нужно сузить влияние — комбинировать маски в затемняющей логике (<span class="md__strong">Darken / Multiply</span>),</div>
+</div>
+<div class="md__list-elem">когда нужно расширить влияние — комбинировать в осветляющей логике (<span class="md__strong">Lighten / Screen</span>).</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">После объединения всегда доводить итог:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">подконтрастить (Levels/Curves/Auto Levels),</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">при необходимости инвертировать,</div>
+</div>
+<div class="md__list-elem">проверить края и «лишнее» вручную кистью по маске.</div>
+</div>
+</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Кейсы: отделение объектов по насыщенности и по оттенку через Difference</h1>
+<div class="md__paragraph">Difference «сравнивает текущий слой и ниже лежащую картинку»:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">где разницы нет — чёрный,</div>
+</div>
+<div class="md__list-elem">где разница есть — показывается величина разницы по каналам.</div>
+</div>
+<h3 class="md__title md__title_third">Отделение по насыщенности (пример: рыжие волосы на почти сером фоне)</h3>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Фон почти серый → насыщенность минимальная.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Волосы рыжие → насыщенность выше.</div>
+</div>
+<div class="md__list-elem">Канал насыщенности (в зависимости от модели) может отделить волосы от фона достаточно хорошо.</div>
+</div>
+<h3 class="md__title md__title_third">Убрать тень под лифчиком</h3>
+<div class="md__paragraph">Задача: тень под лифчиком делает впечатление, что лифчик «отстоит от кожи», поэтому тень нужно убрать.</div>
+<h4 class="md__title md__title_fourth">Вариант 1 — через маску насыщенности</h4>
+<div class="md__list md__list_ordered">
+<div class="md__list-elem">
+<div class="md__paragraph">Проверить RGB‑каналы: разница между лифчиком и тенью может быть недостаточной.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Проверить маску насыщенности (разные модели) и выбрать ту, где лифчик/тень отделяются лучше.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_EQ8GV4pbdy.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Доработать затемнителем (в тенях) при необходимости.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/yXSTQoLSY6.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Инвертировать маску так, чтобы была выбрана кожа.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">По маске штампом «ниже» накопировать кожу, убирая тень.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_ZHIDXh2FPo.jpg" alt=""></div>
+</div>
+</div>
+<h4 class="md__title md__title_fourth">Вариант 2 — через оттенок и Difference</h4>
+<div class="md__list md__list_ordered">
+<div class="md__list-elem">
+<div class="md__paragraph">Создать Hue/Saturation, взять красный оттенок.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Поставить Hue на <span class="md__strong">+180</span>, чтобы увидеть зону влияния, и настроить диапазон так, чтобы кожа (жёлто‑оранжевая) не попадала.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_h4LM2XkriZ.jpg" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Перевести этот Hue/Saturation в режим <span class="md__strong">Difference</span>.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_u5CgMgZCkE.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Слепить результат в новый слой (Stamp Visible) и удалить временный Hue/Saturation.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">В каналах найти, где маска лучше читается (в примере — Green channel).</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Скопировать канал в слои, сделать <span class="md__strong">Auto Levels</span>.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">При необходимости инвертировать (Ctrl/Cmd + I) — получить правильную сторону маски.</div>
+</div>
+<div class="md__list-elem">По маске штампом «ниже» накопировать кожу, убирая тень.</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Экшены</h1>
+<div class="md__paragraph">Экшены живут в <span class="md__strong">Actions panel</span>: <span class="md__strong">Window → Actions</span>.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_Og6QMsWacg.png" alt=""></div>
+<div class="md__paragraph">Экшены экспортируются/импортируются <span class="md__strong">только папками (Set)</span>:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">Save Actions → *.atn,</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Load Actions → загрузка *.atn.         </div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Создать экшен  - + внизу панели</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_zaubKj0Bnm.png" alt=""></div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Во время записи:</div>
+<div class="md__list">
+<div class="md__list-elem">
+<div class="md__paragraph">не кликать мышкой по слою до задания ему оригинального названия: на выделенном слое <span class="md__strong">Layer → Rename Layer</span> или из выпадающего меню - в правом верхнем углу панели Layers (бутерброд)</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/cojxn8mxkE.png" alt=""></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_HX9JTzxvL9.png" alt=""></div>
+</div>
+<div class="md__list-elem">лучше перемещаться по слоям клавишами и заранее задавать уникальные имена.</div>
+</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">Любое действие внутри экшена можно раскрыть, 
+удалить, менять местами (но перестановка может сломать логику). Не 
+забывайте отключать запись в этот момент, чтобы действие не записалось в
+ экшен.</div>
+</div>
+<div class="md__list-elem">
+<div class="md__paragraph">В Actions у шага (например, Gaussian Blur) 
+можно включить значок диалога (маленький квадратик), чтобы при запуске 
+экшен спрашивал радиус и давал его изменить. А так же отключить действие
+ - галочка слева.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2014_files/chrome_zvlgCIAsQo.png" alt=""></div>
+</div>
+</div>
+    </div>
+                    </div>
+</body></html>
