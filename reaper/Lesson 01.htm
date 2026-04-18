@@ -1,0 +1,335 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Занятие1. Работа со звуком в Reaper</title>
+                    <link rel="stylesheet" href="Lesson%2001_files/main.4710.min.css"></head>
+    <body class="vsc-initialized">
+        <div class="wrapper">
+                <div class="content-wrapper page-wrapper page-wrapper--bottom">
+        <div class="title">Занятие1. Работа со звуком в Reaper</div>
+<h1 class="md__title md__title_first">Содержание:</h1>
+<div class="md__list">
+<div class="md__list-elem">Установка Reaper. Установка расширений SWS и Reapack</div>
+<div class="md__list-elem">Интерфейс Reaper. Аудио-интерфейс и буфер</div>
+<div class="md__list-elem">Настройка расположения окон под задачу. Основные элементы микшера и трек</div>
+<div class="md__list-elem">Эффекты</div>
+<div class="md__list-elem">Быстрая запись аудио. Сохранение конфигурации интерфейса. Сохранение настройки</div>
+<div class="md__list-elem">Рекомендуемые настройки. Организация медиа данных. Настройка MIDI-устройств</div>
+<div class="md__list-elem">«Темы» Reaper. Оптимизация интерфейса</div>
+<div class="md__list-elem">Экшены</div>
+<div class="md__list-elem">Кастомизация действий мыши. Интеграции внешних редакторов</div>
+<div class="md__list-elem">Базовый монтаж. Сохранение проекта</div>
+<div class="md__list-elem">Инструментальный трек. Свойства проекта</div>
+<div class="md__list-elem">Шаблоны проекта. Регионы и маркеры </div>
+<div class="md__list-elem">Архив конспектов предыдущей версии курса</div>
+</div>
+<hr>
+<hr>
+<h1 class="md__title md__title_first">Установка Reaper. Установка расширений SWS и Reapack</h1>
+<div class="md__paragraph"><span class="md__strong">REAPER</span> (аббр. от англ. <span class="md__strong">R</span>apid <span class="md__strong">E</span>nvironment for <span class="md__strong">A</span>udio <span class="md__strong">P</span>roduction, <span class="md__strong">E</span>ngineering, and <span class="md__strong">R</span>ecording)
+ — DAW (Digital Audio Workstation — Цифровая Рабочая Аудио Станция), 
+коммерческое программное обеспечение для производства музыки. Программа 
+обладает широкими функциональными возможностями и является развитой, 
+профессиональной рабочей средой для создания, записи, редактирования и 
+микширования аудио и миди материала, а также мастеринга композиций. При 
+этом, дистрибутив имеет относительно небольшие размеры.</div>
+<div class="md__list">
+<div class="md__list-elem"><a class="link md__link" href="http://reaper.fm/download.php"></a><a class="link md__link" href="http://reaper.fm/download.php">http://reaper.fm/download.php</a> - ссылка на скачивание программы.</div>
+<div class="md__list-elem"><a class="link md__link" href="http://www.sws-extension.org/"></a><a class="link md__link" href="http://www.sws-extension.org/">http://www.sws-extension.org</a> - расширение функционала.</div>
+<div class="md__list-elem"><a class="link md__link" href="http://reapack.com/">reapack.com</a> - пакет дополнительных actions.</div>
+<div class="md__list-elem">При установке возможен вариант портабельной установки (Win) - необходимо отметить чекбокс <span class="md__em">Portable install</span></div>
+<div class="md__list-elem">После установки необходимо настроить программу.</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Интерфейс Reaper. Аудио-интерфейс и буфер</h1>
+<h3 class="md__title md__title_third">Audio - Device (win) Выбор аудио интерфейса (звукового устройства)</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/c8caf730679e35f15120eab9154efc69f243e337.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">1. - тип аудио драйвера.  </div>
+<div class="md__list-elem">2. - драйвер устройства.  </div>
+<div class="md__list-elem">3. - диапазон входных и выходных  каналов.  </div>
+<div class="md__list-elem">4. - параметры Asio драйвера.  </div>
+<div class="md__list-elem">5. - разрешить проекту менять частоту сэмплирования аудио устройства.</div>
+</div>
+<div class="md__paragraph"><span class="md__strong">ASIO</span> - Audio 
+Stream Input/Output (ASIO), «ввод-вывод потоковых аудиоданных» — 
+протокол передачи данных с малой задержкой (англ. low-latency), 
+разработан компанией Steinberg. Этот драйвер ограничивается применением в
+ среде Win</div>
+<div class="md__paragraph"><span class="md__strong">Latency</span> - это время между midi командой (или аудио сигналом) поступившим на вход DAW и звуком который мы услышим на выходе.
+Характеризуется в основном  размером буфера (чем он больше тем больше задержка), и от драйвера устройства.</div>
+<div class="md__paragraph">Если у вас обычная интегрированная звуковая 
+карта то вы также сможете эффективно работать в Reaper на windows  с 
+помощью драйвера <a class="link md__link" href="http://www.asio4all.com/">Asio4All</a></div>
+<div class="md__paragraph"><span class="md__strong">Mac</span></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/MvShjfVwAL.png" alt="2026-01-15_18-50-17"></div>
+<hr>
+<h1 class="md__title md__title_first">Настройка расположения окон под задачу. Основные элементы микшера и трек</h1>
+<h3 class="md__title md__title_third">Обзор интерфейса</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/4Vy19ZJj5x.png" alt="2026-01-15_20-44-32"></div>
+<div class="md__paragraph">В Reaper возможно настраивать интерфейс "под себя" а также, чтобы не повторять процедуру, экспортировать все настройки.</div>
+<div class="md__paragraph"><span class="md__strong">ToolBar</span>  - 
+панели с кнопками, которые можно расположить по своему усмотрению, 
+назначить операции либо последовательность действий (Action). Кнопок на 
+Toolbar может быть любое количество.</div>
+<div class="md__paragraph">Раздел <span class="md__strong">Selection</span> - справа внизу, тайминг выбранной области.</div>
+<div class="md__paragraph"><span class="md__strong">Dock</span> - часть 
+элемента интерфейса в виде отдельной панели, в зависимости от задачи 
+удобно располагать нужные панели как удобно,  и используя 
+ScreenSets/Layouts  быстро переключаться между вариантами расположения.</div>
+<h3 class="md__title md__title_third">Вариант удобного расположения панели микшера</h3>
+<iframe src="Lesson%2001_files/870273824.htm" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" width="1280" height="720"></iframe>
+<hr>
+<h1 class="md__title md__title_first">Эффекты</h1>
+<div class="md__paragraph">В Reaper возможно применить эффект как целиков на трек, так и на отдельно взятый фрагмент Item (Take).
+Для применения эффекта на Item нужно выделить его и нажать Shift+E
+Чтобы применить эффект на трек достаточно нажать Shift+F на выбранном треке, либо нажать ЛКМ <img class="md__img" src="Lesson%2001_files/qGnpnqWlbZ.png" alt=""> на треке.</div>
+<div class="md__paragraph">При это откроется список эффектов (в данном примере был установлен ReaVerb  в инсерт трека).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/837JKqxKtx.gif" alt=""></div>
+<div class="md__paragraph">Тоже самое можно реализовать из панели микшера</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/VTqhhRxmjS.gif" alt=""></div>
+<div class="md__paragraph">В Reaper огромное количество самых 
+разнообразных эффектов, причем не смотря на простой интерфейс плагины 
+отлично звучат и удобны в работе при очень скромных потребностях в 
+ресурсах CPU.</div>
+<div class="md__paragraph">В Reaper возможны два режима отключения эффекта (чтобы не удалять его а просто отключить).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/4lV6Iwfjhh.gif" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem"><span class="md__strong">Bypass</span> (Shift+ЛКМ) - эффект не работает но частично нагружает CPU.</div>
+<div class="md__list-elem"><span class="md__strong">Offline</span> (CRTL+Shift+ЛКМ) - эффект полностью исключается из цепи (но остается в треке со всеми настройками).</div>
+<div class="md__list-elem"><span class="md__strong">Удаление эффекта</span> - ALT+ЛКМ.</div>
+<div class="md__list-elem"><span class="md__strong">Перетаскивание эффекта</span> - просто тащим на нужный трек с зажатым ALT.</div>
+<div class="md__list-elem">Также есть более расширенно окно управления 
+эффектами, где доступны параметры автоматизации, управление роутингом 
+эффектов, регулятор Dry-wet.</div>
+<div class="md__list-elem">Копирование в данном окне реализовано с CTRL.</div>
+<div class="md__list-elem">Также очень просто копировать эффекты сочетанием CTRL+C и вставить CTRL+P.</div>
+</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/g16uTpaYVk.gif" alt=""></div>
+<hr>
+<h1 class="md__title md__title_first">Быстрая запись аудио. Сохранение конфигурации интерфейса. Сохранение настройки</h1>
+<h3 class="md__title md__title_third">Быстрая запись аудио</h3>
+<div class="md__paragraph">Для записи необходимо активировать нужный трек (Record arm) и выбрать входной канал.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/13bb99e98ff9cd6cac67d864698cda4f33f57894.gif" alt=""></div>
+<div class="md__paragraph">Старт записи CTRL+R либо кнопка записи на панели Transport</div>
+<div class="md__paragraph">Для того чтобы слышать результирующий звук (с
+ обработками на треке) необходимо активировать режим мониторинга, для 
+комфортной работы необходимо чтобы значение Latensy было как можно 
+меньше</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/a490ca798ce3e9370eced1d9682461e0b972f83c.gif" alt=""></div>
+<h3 class="md__title md__title_third">Настройка Dock панели для разных задач, ScreenSets</h3>
+<div class="md__paragraph">Расположение панелей можно настроить под себя и сохранить это в виде «пресеты», вариантов может быть несколько.</div>
+<div class="md__list">
+<div class="md__list-elem">Сохранение и редакция выполняется в окне <span class="md__em">Screensets/Layouts (cmd+e)</span>.</div>
+<div class="md__list-elem">Сохранить расположение <span class="md__em">Load Key</span>.</div>
+<div class="md__list-elem">Загрузить <span class="md__em">Save Key</span>.</div>
+</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/5cd82b79e2480.gif" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">Таким же образом можно сохранить настройки для треков - вкладка <span class="md__em">Track Views</span> и снэпшоты выбранных items и треков  - вкладка <span class="md__em">Selection sets</span>.</div>
+<div class="md__list-elem">Вкладка <span class="md__em">Layouts</span> настраивает отображение и свойства элементов темы.</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Рекомендуемые настройки. Организация медиа данных. Настройка MIDI-устройств</h1>
+<div class="md__paragraph"><span class="md__em">Options - Preferences</span> или <span class="md__strong">Ctrl + P</span> или <span class="md__strong">Клик ЛК мыши</span> в правом верхнем углу (там мы видим состояние аудио интерфейса и параметры проекта).</div>
+<div class="md__paragraph">Обратите внимание на отличный поиск по всем разделам настроек.</div>
+<div class="md__paragraph">Рекомендуется заглянуть в разделы настроек, оописанные ниже.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/ExwzsERj7G.png" alt=""></div>
+<div class="md__paragraph">1. - импорт и экспорт настроек программы, выбор языка (рекомендую Eng).  </div>
+<div class="md__paragraph">2. - настройка параметров запуска программы, проверка обновлений при старте -  создание нового проекта  </div>
+<div class="md__paragraph">3. - параметры списка последних проектов.</div>
+<h4 class="md__title md__title_fourth">Экспорт сохраненных настроек и параметров</h4>
+<div class="md__paragraph">Все настройки можно сохранять и загружать в 
+Reaper на других компьютерах. При сохранении мы можем выбрать что именно
+ хотим сохранить (сохраняется файл конфигурации)</div>
+<div class="md__paragraph"><span class="md__strong">Импорт и экспорт настроек Toolbars</span></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/5cd8297a7eb38.png" alt=""></div>
+<div class="md__paragraph">Мы можем сохранить и загрузить настройки всех Toolbars в одном файле либо для каждого Toolbar отдельно</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/5cd8299d44185.gif" alt=""></div>
+<div class="md__paragraph">Данное меню позволяет выбрать что именно мы хотим сохранить. </div>
+<div class="md__paragraph">Сами файлы конфигурации по умолчанию находятся в папке <span class="md__em">Configurations</span> в папке Reaper - но фактически они могут находится где угодно (на Dropbox например, чтобы иметь к ним доступ откуда угодно).</div>
+<h3 class="md__title md__title_third">Настройка Midi устройств</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/Iq0WvEpNGR.gif" alt="Reaper Midi Settings"></div>
+<div class="md__paragraph">Двойным кликом ЛК в разделе Status  открывается дополнительные параметры входа и выхода.</div>
+<h3 class="md__title md__title_third">Настройка авто сохранения проекта</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/mdgljyau0h.jpg" alt="image-20260115190034059"></div>
+<h3 class="md__title md__title_third">Настройка директорий для рабочих файлов</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/5SohrXXnhn.png" alt="2026-01-15_19-01-54"></div>
+<div class="md__paragraph">Файлы pk это одноименные файлы небольшого 
+размера файлы, создаваемые при открытии или записи  аудио файла, в них 
+содержится информация о форме волны(графическая отрисовка).</div>
+<h3 class="md__title md__title_third">Вкладка Project</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/LdUi6mAIYJ.png" alt="2026-01-15_20-36-27"></div>
+<h3 class="md__title md__title_third">Путь к сторонним VST плагинам</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/72fe324ca4aa8fad8a1ee2f6aecac20a2fa1ab8b.png" alt=""></div>
+<div class="md__paragraph">Можно указать несколько путей (на скрине например два).</div>
+<div class="md__paragraph">Reaper поддерживает любое количество эффектов, 32 и 64 битных, VST, VSTi, DX, DXi, AU.</div>
+<div class="md__paragraph"><span class="md__em">Auto-detect </span>- Reaper сам найдет папки с эффектами.</div>
+<hr>
+<h1 class="md__title md__title_first">«Темы» Reaper. Оптимизация интерфейса</h1>
+<div class="md__paragraph"><span class="md__strong">Тема</span> – это оформление интерфейса программы, меняется только интерфейс и визуализация. На звук это не влияет.</div>
+<div class="md__paragraph">Много тем доступно на официальном сайте в разделе <a class="link md__link" href="https://stash.reaper.fm/tag/Themes">Themes</a></div>
+<div class="md__paragraph">Как альтернативную тему могу рекомендовать <a class="link md__link" href="https://www.reapertips.com/products/reapertips-theme">https://www.reapertips.com/products/reapertips-theme</a></div>
+<div class="md__paragraph">Для использования необходимо чтобы файл темы находился в папке  ColorThemes директории ресурсов программы.
+Переключение между темами через меню Options - Themes - выбираем нужную тему из списка.</div>
+<hr>
+<h1 class="md__title md__title_first">Экшены</h1>
+<div class="md__paragraph">Раздел Actions находится между Options и 
+Extensions основного меню в верхней части интерфейса (горячая клавиша ?)
+ - это список всех действий Reaper, в Action List мы можем найти, 
+создать, запустить и назначить на горячие клавиши необхоимые операции, и
+ инструменты. Сюда же добавляются новые скрипты при установке. (Sws и 
+reapack)</div>
+<div class="md__paragraph">Для быстрого поиска удобно пользоваться строкой фильтра (Filter) </div>
+<hr>
+<h1 class="md__title md__title_first">Кастомизация действий мыши. Интеграции внешних редакторов</h1>
+<div class="md__paragraph"><span class="md__strong">Mouse Modifiers</span>
+ - кастомизация всех действий мыши, посредством привязки Actions, причем
+ в каждом окне интерфейса привязка независима. Очень полезна функция 
+импорта/экспорта настроек.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/4e59bcb3c789454686c67ccd5b3c4a065c5f5c0f.png" alt=""></div>
+<h3 class="md__title md__title_third">Интеграция с внешними DAW, External Editor</h3>
+<div class="md__list">
+<div class="md__list-elem">Из Reaper можно отправлять <span class="md__em">Audio Items</span> на 2 выбранных аудио редактора, например Melodyne или Audition.</div>
+<div class="md__list-elem">Для этого в настройках  раздела <span class="md__em">External Editors</span> необходимо указать путь к исполняемому файлу  (например Melodyne.app или Melodyne.exe для win).</div>
+</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/5cd82beaead16.png" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">После этого нажимая ПКМ на <span class="md__em">Item</span> выбираем команду <span class="md__em">Open Items in editor</span> - выбираем нужный редактор и файл отправляется в него.</div>
+<div class="md__list-elem">Удобно применять <span class="md__em">Action</span> этой команды назначив его на кнопку или на хоккей, причем часто необходимо отправить копию <span class="md__em">item</span> чтобы не трогать оригинал.</div>
+</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/5cd82c337a160.png" alt=""></div>
+<div class="md__paragraph">Rewire позволяет запустить тот же Reaper в 
+других приложениях, также reaper поддерживает работу по rewire сторонних
+ эффектов и программ.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/5cd82c5b7940a.png" alt=""></div>
+<div class="md__paragraph">Программа или эффект вставляет в любой FX слот.</div>
+<div class="md__paragraph">Так же Reaper поддерживает обмен данными с 
+плагинами ARA 2 (Audio Random Access) - не нужно в ручную записывать 
+аудио в плагины, при добавлении он импортируется и синхронизируется 
+автоматически. например Melodyne, Revoice и тд.</div>
+<hr>
+<h4 class="md__title md__title_fourth">Базовый монтаж.  Сохранение проекта</h4>
+<div class="md__paragraph">ЛК мыши моно менять положение Item по 
+горизонтали, так же мы можем перетаскивать item между треками. Если 
+трека нет то он будет создан автоматически.</div>
+<div class="md__paragraph">Разрезать Item в месте курсора воспроизведения (Playhead) - S</div>
+<div class="md__paragraph">Если мы хоти разрезать Item по области Time Selection (в начале и в конце) то жмем Shift+S</div>
+<div class="md__paragraph">Скопировать Item (CMD+C) либо тянем ЛК мыши удерживая CMD</div>
+<div class="md__paragraph">Вставить (CMD+V)</div>
+<div class="md__paragraph">Дублировать (CMD+D)</div>
+<h6 class="md__title md__title_sixth">Переместив курсор на границы Item мы можем изменить его длину.</h6>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/4a30501ee7cc5e829c798ddd567542759a4bdd87.gif" alt=""></div>
+<div class="md__paragraph">Если потянуть за границу с зажатым ALT мы 
+сможем менять скорость данного Item, а ЛК + ALT реализует Slip - 
+перемещение содержания внутри Item, без изменения его положения.</div>
+<h4 class="md__title md__title_fourth">Кнопка Toggle Razor Editing  - включает/выключает инструмент лезвие:</h4>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/v0qksRkky9.gif" alt="Razor Edit"></div>
+<div class="md__paragraph">Можно использовать лезвие не включая кнопку сочетанием клавиши ALT и ПК мыши</div>
+<h4 class="md__title md__title_fourth">Ripple Editing (ALT+P) - режим 
+ускоряющий монтаж, если он активен то вырезанные части не оставляют пауз
+ и все что справа сдвигается левее. <a class="link md__link" href="https://disk.yandex.ru/i/qk7-sJhSc22FVw">https://disk.yandex.ru/i/qk7-sJhSc22FVw</a></h4>
+<div class="md__paragraph">Может быть для оного трека и для всех треков проекта. </div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/aKuVh1jSns.gif" alt="Ripple Edit"></div>
+<h4 class="md__title md__title_fourth">Сохранение проекта File - Save (CMD+S).</h4>
+<div class="md__paragraph">Сохранить можно проект, шаблон проекта, новую версию проекта.</div>
+<div class="md__paragraph">При сохранении доступны несколько полезных опций.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/4242e0b570a525d2561d6ebbff3261b77ee57909.png" alt=""></div>
+<div class="md__paragraph">1. Создать папку для проекта.<br>
+2. Скопировать все аудио файлы в папку проекта.<br>
+3. Переместить все аудио файлы в папку проекта.<br>
+4. Сконвертировать файлы в указанный формат</div>
+<h1 class="md__title md__title_first">Инструментальный трек. Свойства проекта</h1>
+<h3 class="md__title md__title_third">Добавление трэка</h3>
+<div class="md__paragraph"><span class="md__strong">CTRL + T</span></div>
+<div class="md__paragraph">Двойной клик в поле трэков</div>
+<div class="md__paragraph">Через меню - <span class="md__strong">Track - Insert new track</span></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/uttkehXeTI.gif" alt="Track color"></div>
+<div class="md__paragraph">Тут же можно добавить иконку и выбрать нужный цвет.</div>
+<div class="md__paragraph"><span class="md__strong">Инструментальный трек</span>
+ - как правило трек с Midi данными. Добавляется ПК мыши  в пустом поле 
+треков - Insert Intrumental Track. Для использования нужно добавить на 
+него какой либо синтезатор либо семплер. При этом фактически это такой 
+же трек и может содержать аудио, видео и файлы изображения. </div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/3zGLSnrUtC.gif" alt="Instr track"></div>
+<h3 class="md__title md__title_third">Создание проекта</h3>
+<div class="md__paragraph"><span class="md__strong">File -New Project, CTRL+ N</span></div>
+<div class="md__paragraph">В настройках можно сразу указать пути для файлов глобально, либо при создании проекта (promt to save on new project)</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/fc618c715dcc0f87ad0870f1637f76e9e7e99cf2.png" alt=""></div>
+<h3 class="md__title md__title_third">Настройка Media для проекта</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/348a17518ec1f7e5fab5495b90e565d99f1bb1fc.png" alt=""></div>
+<h3 class="md__title md__title_third">Создание и настройка проекта</h3>
+<div class="md__paragraph">При запуске Reaper создает безымянный проект  с настройками по умолчанию (которые также можно настроить).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/2fce0588105791c86dcebfd8dfbf1d97a8cbbcd1.png" alt=""></div>
+<div class="md__paragraph">1. - частота сэмплирования проекта (при снятом чекбоксе частота аудио интерфейса).<br>
+2. - темп и размер.<br>
+3. - зависимость и привязка темпа items (айтемов)и огибающих к изменениям темпа проекта.<br>
+4. - частота кадров проекта.<br>
+5. - параметры начала проекта - время старта в секундах и номер такта с которого стартует проект.<br>
+6. - выбор алгоритма ресемплинга при воспроизведении и экспорте в файл( рендер).<br>
+7. - режимы таймстретчинга и питч шифт   по умолчанию.</div>
+<div class="md__paragraph"><span class="md__strong">таймстретчинг</span> - изменение скорости проигрывания</div>
+<div class="md__paragraph"><span class="md__strong">питч шифт</span> - изменение высоты тона</div>
+<div class="md__paragraph"><span class="md__strong">Save as default Project settings</span> - сохранить данные настройки по умолчанию для всех новых проектов.</div>
+<h3 class="md__title md__title_third">Создание проекта</h3>
+<div class="md__paragraph"><span class="md__strong">File -New Project, CTRL+ N</span></div>
+<div class="md__paragraph">В настройках можно сразу указать пути для файлов глобально, либо при создании проекта (promt to save on new project)</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/fc618c715dcc0f87ad0870f1637f76e9e7e99cf2.png" alt=""></div>
+<h3 class="md__title md__title_third">Настройка Media для проекта</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/348a17518ec1f7e5fab5495b90e565d99f1bb1fc.png" alt=""></div>
+<h3 class="md__title md__title_third">Добавление трэка</h3>
+<div class="md__paragraph"><span class="md__strong">CTRL + T</span></div>
+<div class="md__paragraph">Двойной клик в поле трэков</div>
+<div class="md__paragraph">Через меню - <span class="md__strong">Track - Insert new track</span></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/uttkehXeTI.gif" alt="Track color"></div>
+<div class="md__paragraph">Тут же можно добавить иконку и выбрать нужный цвет.</div>
+<hr>
+<h1 class="md__title md__title_first">Шаблоны проекта. Регионы и маркеры</h1>
+<h3 class="md__title md__title_third">Project Template</h3>
+<div class="md__paragraph">Шаблон проекта со всеми настройками, 
+эффектами, расположением окон и даже медиа данными можно сохранить 
+использовать в качестве отправной точки в новом проекте. </div>
+<div class="md__paragraph"><span class="md__strong">File - Project templates - Save Project As Template</span></div>
+<h3 class="md__title md__title_third">Регионы и маркеры</h3>
+<div class="md__list">
+<div class="md__list-elem">Создание региона - выделяем область на <span class="md__em">timeline</span> и <span class="md__strong">Shift+R</span></div>
+<div class="md__list-elem">Регион можно копировать  удерживая <span class="md__strong">CMD</span> (mac) <span class="md__strong">Ctrl</span> (win)</div>
+<div class="md__list-elem">Перемещать и сдвигать границы региона</div>
+<div class="md__list-elem">Доступ к редакции имени и цветов  - ПКМ на регионе</div>
+</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2001_files/5cd82de9374b2.gif" alt=""></div>
+<div class="md__list">
+<div class="md__list-elem">Добавить маркер  - <span class="md__strong">m</span> или <span class="md__strong">Shift+m</span> при этом сразу открывается окно настроек маркера</div>
+<div class="md__list-elem">Удалить маркер - <span class="md__strong">Alt+ЛКМ</span></div>
+</div>
+<h3 class="md__title md__title_third">Навигация по проекту</h3>
+<h4 class="md__title md__title_fourth">Масштабирование и навигация</h4>
+<div class="md__paragraph"><span class="md__strong">'-'</span> и <span class="md__strong">'+'</span> на клавиатуре и у скролл баров (также можно "тянуть" между знаками '-' и '+' у скролл бара).</div>
+<div class="md__list">
+<div class="md__list-elem"><span class="md__strong">CTRL+PageUp</span> - зумирование выделенной области.</div>
+<div class="md__list-elem"><span class="md__strong">CTRL + Колесо мыши</span>   - зум по вертикали.</div>
+<div class="md__list-elem"><span class="md__strong">Колесо мыши</span> - зум по горизонтали.</div>
+<div class="md__list-elem"><span class="md__strong">Page Down</span> Уменьшение вертикального масштаба</div>
+<div class="md__list-elem"><span class="md__strong">Page Up</span> Увеличение вертикального масштаба</div>
+<div class="md__list-elem"><span class="md__strong">Ctrl Page Down</span> Масштабирование по длине всего проекта</div>
+<div class="md__list-elem"><span class="md__strong">- (знак минус)</span> Уменьшение горизонтального масштаба</div>
+<div class="md__list-elem"><span class="md__strong">+ (знак плюс)</span> Увеличение горизонтального масштаба</div>
+<div class="md__list-elem"><span class="md__strong">Shift Вверх (стрелка)</span> Увеличение масштаба waveform (громкость не меняется)</div>
+<div class="md__list-elem"><span class="md__strong">Shift Вниз</span> Уменьшение масштаба waveform (громкость не меняется)</div>
+<div class="md__list-elem"><span class="md__strong">Ctrl PageUp</span> Масштабировать по выделению</div>
+<div class="md__list-elem">Также можно потянуть за края скролл-баров.</div>
+</div>
+<h4 class="md__title md__title_fourth">Скролл</h4>
+<div class="md__list">
+<div class="md__list-elem"><span class="md__strong">Колесо мыши + ALT</span> горизонтальный.</div>
+<div class="md__list-elem"><span class="md__strong">Колесо мыши + CTRL+ALT</span> - вертикальный (либо просто колесо в поле трэков).</div>
+<div class="md__list-elem"><span class="md__strong">Alt Вниз</span> прокрутка вниз</div>
+<div class="md__list-elem"><span class="md__strong">Alt Вверх</span> прокрутка вверх</div>
+<div class="md__list-elem"><span class="md__strong">Alt Влево</span> прокрутка влево</div>
+<div class="md__list-elem"><span class="md__strong">Alt Вправо</span> прокрутка вправо</div>
+</div>
+<hr>
+<hr>
+<hr>
+    </div>
+                    </div>
+</body></html>
