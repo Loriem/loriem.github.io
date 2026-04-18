@@ -1,0 +1,309 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Занятие 3. Работа со звуком в Reaper</title>
+                    <link rel="stylesheet" href="Lesson%2003_files/main.4710.min.css"></head>
+    <body class="vsc-initialized">
+        <div class="wrapper">
+                <div class="content-wrapper page-wrapper page-wrapper--bottom">
+        <div class="title">Занятие 3. Работа со звуком в Reaper</div>
+        <h4 class="md__title md__title_fourth">Содержание:</h4>
+<div class="md__list">
+<div class="md__list-elem">Менеджер треков. Панель трека и органы управления</div>
+<div class="md__list-elem">Организация эффектов</div>
+<div class="md__list-elem">Создание и работа с шаблонами треков. Папки треков</div>
+<div class="md__list-elem">Insert FX. Input FX. Send FX</div>
+<div class="md__list-elem">SideChain</div>
+<div class="md__list-elem">Настройка эффектов по умолчанию</div>
+<div class="md__list-elem">Микшер</div>
+<div class="md__list-elem">Варианты отображения Item. Огибающие для Take Ускорение, замедление, изменение высоты</div>
+<div class="md__list-elem">Каналы</div>
+</div>
+<hr>
+<hr>
+<h1 class="md__title md__title_first">Менеджер треков. Панель трека и органы управления</h1>
+<div class="md__paragraph">Ключевое отличие трека Reaper от многих других DAW - универсальность и всеядность.</div>
+<div class="md__paragraph">Трек в Reaper может содержать в себе как аудио данные с любым количеством каналов, так и миди.</div>
+<h3 class="md__title md__title_third">Элементы управления панели трека</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/GL1DXuyJHT.jpg" alt="2026-01-21_19-57-29"></div>
+<div class="md__paragraph">1. <span class="md__strong">Активация записи</span> – при включении трек будет записывать сигнал, мониторинг справа от кнопки записи.</div>
+<div class="md__paragraph">2. <span class="md__strong">Имя трека</span> – двойным щелчком ЛК - пишем нужное имя.</div>
+<div class="md__paragraph">3. <span class="md__strong">Фейдер громкости</span> – уровень громкости трека.</div>
+<div class="md__paragraph">4. <span class="md__strong">Mute и solo</span> – Мьют - трек заглушен, соло - трек звучит один.</div>
+<div class="md__paragraph">5.  <span class="md__strong">I/O роутинг (коммутация)</span> – открывает окно настроек входа, выхода, посылов, панорамы.</div>
+<div class="md__paragraph">6. <span class="md__strong">Insert Эффекты трэка</span> – доступ к эффектам для трэка, ПК мыши показывает текущие трэки, чуть правее кнопка отключения всех эффектов (байпас).</div>
+<div class="md__paragraph">7. <span class="md__strong">Панорама</span> – регулятор панорамы, положение источника относительно центра.</div>
+<div class="md__paragraph">8. <span class="md__strong">Режими записи Midi и Audio</span>.</div>
+<div class="md__paragraph">9. <span class="md__strong">Input FX.</span></div>
+<div class="md__paragraph">10. <span class="md__strong">Выбор входа</span> – тут выбирается источник входа - аудио или миди.</div>
+<div class="md__paragraph">11. <span class="md__strong">Огибающие и автоматизация</span> – доступ к параметрам автоматизации и огибающим.</div>
+<div class="md__paragraph">12. <span class="md__strong">Индикация уровня</span> –отображает уровень входа, выхода аудио и активность midi сигнала.</div>
+<div class="md__paragraph">13. <span class="md__strong">Иконка трека (отключаемо)</span> – изображение характеризующее содержание трека.</div>
+<div class="md__paragraph">Большинство функции на панели трека "зеркалится" на панели микшера.</div>
+<div class="md__paragraph"><span class="md__strong">Также удобно использовать режим переключения Mute и Solo c сочетанием CTRL+ALT (например сравнение трэков)</span></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/2240ba7118eea5ae80780fc5cf7ae5debf41b577.gif" alt=""></div>
+<h3 class="md__title md__title_third">Копирование, удаление, перемещение и упорядочивание треков</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/973ebaf3cc5d864dbe4843197e56ca874955a364.png" alt=""></div>
+<h3 class="md__title md__title_third">Track Manager (CTRL+SHIFT+M)</h3>
+<div class="md__paragraph">Позволяет быстро в пределах одного окна 
+организовать треки, эффекты на них, оперировать параметрами треков, 
+включить - выключить отображение треков панели треков (TCP) и в микшере 
+(MCP)</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/wzjkfjvY9w.gif" alt="Track manager"></div>
+<hr>
+<h1 class="md__title md__title_first">Организация эффектов</h1>
+<div class="md__paragraph"><span class="md__strong">Добавление эффектов и роутинг</span></div>
+<div class="md__paragraph">Добавить эффект можно через FX браузер (Shift+F) - перетаскиваем нужный эффект на трек,</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/WcDOGiEt1N.gif" alt="Add FX Browser"></div>
+<div class="md__paragraph">либо открыть этот же браузер нажатием кнопки FX на треке либо в микшере.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/32YhO4wOd2.gif" alt="Add FX"></div>
+<div class="md__paragraph">Эффекты можно менять местами простым перетаскиванием.</div>
+<div class="md__paragraph">В браузере эффектов можно назначать горячие клавиши на добавление (ПК мыщи - Create Shortcut), переименовывать их -  Rename FX.</div>
+<div class="md__paragraph">Переименование так же доступно на  добавленных эффектах.</div>
+<div class="md__paragraph">Track Input FX - это эффект который сразу записывается в файл, его нельзя отменить после записи.</div>
+<div class="md__paragraph">Добавляемся аналогично но в слот in FX </div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/MX7oCT4hns.png" alt="2026-01-22_12-58-22"></div>
+<hr>
+<h1 class="md__title md__title_first">Создание и работа с шаблонами треков. Папки треков</h1>
+<h3 class="md__title md__title_third">Track Template</h3>
+<div class="md__paragraph"><span class="md__strong">Шаблон трэка</span> - сохраненные параметры трэка влючая эффекты, огибающие и данные на нем.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/XasT72rTMX.gif" alt="Track Template"></div>
+<div class="md__paragraph">Шаблоны существенно ускоряют организацию проекта и удобство в работе.</div>
+<h3 class="md__title md__title_third">Папки треков</h3>
+<div class="md__paragraph">Треки можно добавить в папки - Track Folders</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/z8LySnaDKi.gif" alt="Track Folders"></div>
+<hr>
+<h1 class="md__title md__title_first">Insert FX. Input FX. Send FX</h1>
+<div class="md__paragraph">Insert FX - эффект непосредственно на треке. Влияет на все содержимое трека,</div>
+<div class="md__paragraph">Input FX - эффект на входе трека, так же 
+добавляется на трек но сразу записывается в аудио файл, его нельзя 
+отменить или перенастроить после записи. </div>
+<div class="md__paragraph">Send FX -  эффект добавлется на другой трек, 
+сигнал посылается с одного либо нескольких треков на этот трек с 
+эффектом. Приимущество перед Insert FX  в том что разные треки могу быть
+ обработаны одним Send FX  с разной пропорцией.</div>
+<hr>
+<h1 class="md__title md__title_first">SideChain</h1>
+<div class="md__paragraph">Реализуется путем посыла сигнала (Send) на 
+трек с эффектом но на каналы 3/4 (по умолчанию), Если необходимо 
+использовать несоклько не зависимых Sidechain эффектов используем разные
+ каналы (например 3/4. 5/6. и тд)</div>
+<div class="md__paragraph">Чтобы конкретный эффект работал в режиме 
+SideChain нужно его настроить соответственно, например штатный 
+сомпрессор reacomp: его Detector Input нужно переключить в режим 
+Auxillary Inputs. Так дедектор компрессора будет слушать сигнал каналов 
+3/4 и реагировать именно на него.Reaper обладает уникальным роутингом 
+(маршрутизация сигнала), даже внутри трэка мы можем реализовать 
+микширование эффектов с различным уровнем и независимую обработку 
+последовательно установленных эффектов. (это очень ускоряет создание 
+SideChain (сайдчейн) цепей, дакинга, параллельной обработки и т.п.)</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/6689929882cf86e29d95b3e1ab61b7c5c9dd2d57.png" alt=""></div>
+<div class="md__paragraph">Реализация Send  FX - через меню Route либо просто перетаскиваем "сигнал"с одного канала на другой</div>
+<div class="md__paragraph">Если при этом выбрать каналы посыла 3/4 то по мы получил SideChain - боковой посыл сигнала.</div>
+<div class="md__paragraph">Эффект для работы в режиме SideChain должен быть в соответствуещем режиме (в Reacomp это Aux input)</div>
+<div class="md__paragraph">Небольшая видео памятка </div>
+<iframe src="Lesson%2003_files/1157254639_002.htm" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width:1200;height:900;" title="Reaper Send Fx"></iframe>
+<div class="md__paragraph">Также удобно пользоваться матрицей Routing Matrix (Alt+R) для быстрой настройки коммутации.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/0aec4eed3024546e40bef92582166599c83226d5.png" alt=""></div>
+<div class="md__paragraph">Fx Chain это сохраненная как пресет цепочка эффектов:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/K3FLph3kxL.gif" alt="FX Chain"></div>
+<hr>
+<h1 class="md__title md__title_first">Настройка эффектов по умолчанию</h1>
+<div class="md__paragraph">Можно сохранить нужные эффекты которые будут сразу добавлятся на трек при его создании:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/gaMN7pFxtR.png" alt="2026-01-22_13-09-43"></div>
+<div class="md__paragraph">Чтобы вернуть добавление пустого трека нужно сохранить пустую цепь эффектов аналогичным образом.</div>
+<div class="md__paragraph">Также можно использовать Container - это по сути эффект в котором могут находиться другие эффекты:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/iuraIX6USc.gif" alt="Fx Container"></div>
+<hr>
+<h1 class="md__title md__title_first">Микшер (Mixer Control Panel (MCP))</h1>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/gZtY1w6h9b.png" alt="2026-01-26_16-52-24"></div>
+<div class="md__paragraph">1. Мастер канал</div>
+<div class="md__paragraph">2. Треки</div>
+<div class="md__paragraph">Чтобы вызвать окно микшера</div>
+<div class="md__list md__list_ordered">
+<div class="md__list-elem">View &gt; Mixer</div>
+<div class="md__list-elem">Ctrl + M</div>
+</div>
+<div class="md__paragraph">Удерживая CMD можно менять высоту слотов инсертов и посылов: </div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/uSL1XnL5Dw.gif" alt="Fx Slots"></div>
+<div class="md__paragraph"><span class="md__strong">I</span> - опции индикации мастер шины (ПК - на индикаторе мастер шины)</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/Tduq5r6r1v.jpg" alt="2026-01-26_16-59-51"></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/1fc2971def4f6d9de4b8e9889fb2bdb9351aae2c.png" alt=""></div>
+<hr>
+<h1 class="md__title md__title_first">Item. Свойства, группировка</h1>
+<div class="md__paragraph">Свойства Item - если два раза кликнуть на аудио item мы попадаем в его свойства</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/eU9ZKWMznM.png" alt="2026-01-22_13-23-13"></div>
+<div class="md__paragraph">Высота звучания аудио Item - реализуется на лету либо через окно Media Item Properties (Pitch Adjust) (свойства Item)</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/02a2527702bee3b7ef5e9271ad77b5424dd15e38.png" alt=""></div>
+<div class="md__paragraph">В зависимости от аудио материала мы можем выбрать наиболее подходящий алгоритм.</div>
+<div class="md__paragraph">Для одноголосных источников рекомендуется режим elastique Pro 2.8 или 3 в режиме Solo.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/7ea5f644c550d74cc328d06a2ac71294aa8393b4.gif" alt=""></div>
+<div class="md__paragraph">Группировка параметров трека - Shift+G</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/Gnk6xNbKcv.gif" alt="Track Group"></div>
+<div class="md__paragraph">Группировка Items - выделить нужные и нажать G. Убрать из группы U</div>
+<div class="md__paragraph">Ускорение и замедление Item - удерживаем alt и тянем за начало или конец item:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/LFMYBO7qVS.gif" alt="Stretching Item"></div>
+<hr>
+<h1 class="md__title md__title_first">Варианты отображения Item</h1>
+<div class="md__paragraph">Можно выбрать варианты отображения Items на одном треке при пересечении:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/BSdyMFk18C.gif" alt="Overlap item"></div>
+<div class="md__paragraph">Доступ к огибающим Item.</div>
+<div class="md__paragraph">ПКМ на Item попадаем в меню.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/39cfecbb0806b2c5bf6157b2cac116f0a675309f.gif" alt="image"></div>
+<div class="md__paragraph">Огибающие на Item FX работают также но отображаются на самом Item где находится управляемый эффект</div>
+<div class="md__paragraph"><span class="md__strong">Каналы Item</span></div>
+<div class="md__paragraph">Можно без дополнительно рендера оставлять 
+активными нужные каналы многоканальныйх файлов. Также можно разделить 
+каналы на независимые треки (action gen: explode multichannel Audio):</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/dGdBl275ia.gif" alt="ItemChannels"></div>
+<h4 class="md__title md__title_fourth">Содержание:</h4>
+<div class="md__list">
+<div class="md__list-elem">Менеджер треков. Панель трека и органы управления</div>
+<div class="md__list-elem">Организация эффектов</div>
+<div class="md__list-elem">Создание и работа с шаблонами треков. Папки треков</div>
+<div class="md__list-elem">Insert FX. Input FX. Send FX</div>
+<div class="md__list-elem">SideChain</div>
+<div class="md__list-elem">Настройка эффектов по умолчанию</div>
+<div class="md__list-elem">Микшер</div>
+<div class="md__list-elem">Варианты отображения Item. Огибающие для Take Ускорение, замедление, изменение высоты</div>
+<div class="md__list-elem">Каналы</div>
+</div>
+<hr>
+<hr>
+<h1 class="md__title md__title_first">Менеджер треков. Панель трека и органы управления</h1>
+<div class="md__paragraph">Ключевое отличие трека Reaper от многих других DAW - универсальность и всеядность.</div>
+<div class="md__paragraph">Трек в Reaper может содержать в себе как аудио данные с любым количеством каналов, так и миди.</div>
+<h3 class="md__title md__title_third">Элементы управления панели трека</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/GL1DXuyJHT.jpg" alt="2026-01-21_19-57-29"></div>
+<div class="md__paragraph">1. <span class="md__strong">Активация записи</span> – при включении трек будет записывать сигнал, мониторинг справа от кнопки записи.</div>
+<div class="md__paragraph">2. <span class="md__strong">Имя трека</span> – двойным щелчком ЛК - пишем нужное имя.</div>
+<div class="md__paragraph">3. <span class="md__strong">Фейдер громкости</span> – уровень громкости трека.</div>
+<div class="md__paragraph">4. <span class="md__strong">Mute и solo</span> – Мьют - трек заглушен, соло - трек звучит один.</div>
+<div class="md__paragraph">5.  <span class="md__strong">I/O роутинг (коммутация)</span> – открывает окно настроек входа, выхода, посылов, панорамы.</div>
+<div class="md__paragraph">6. <span class="md__strong">Insert Эффекты трэка</span> – доступ к эффектам для трэка, ПК мыши показывает текущие трэки, чуть правее кнопка отключения всех эффектов (байпас).</div>
+<div class="md__paragraph">7. <span class="md__strong">Панорама</span> – регулятор панорамы, положение источника относительно центра.</div>
+<div class="md__paragraph">8. <span class="md__strong">Режими записи Midi и Audio</span>.</div>
+<div class="md__paragraph">9. <span class="md__strong">Input FX.</span></div>
+<div class="md__paragraph">10. <span class="md__strong">Выбор входа</span> – тут выбирается источник входа - аудио или миди.</div>
+<div class="md__paragraph">11. <span class="md__strong">Огибающие и автоматизация</span> – доступ к параметрам автоматизации и огибающим.</div>
+<div class="md__paragraph">12. <span class="md__strong">Индикация уровня</span> –отображает уровень входа, выхода аудио и активность midi сигнала.</div>
+<div class="md__paragraph">13. <span class="md__strong">Иконка трека (отключаемо)</span> – изображение характеризующее содержание трека.</div>
+<div class="md__paragraph">Большинство функции на панели трека "зеркалится" на панели микшера.</div>
+<div class="md__paragraph"><span class="md__strong">Также удобно использовать режим переключения Mute и Solo c сочетанием CTRL+ALT (например сравнение трэков)</span></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/2240ba7118eea5ae80780fc5cf7ae5debf41b577.gif" alt=""></div>
+<h3 class="md__title md__title_third">Копирование, удаление, перемещение и упорядочивание треков</h3>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/973ebaf3cc5d864dbe4843197e56ca874955a364.png" alt=""></div>
+<h3 class="md__title md__title_third">Track Manager (CTRL+SHIFT+M)</h3>
+<div class="md__paragraph">Позволяет быстро в пределах одного окна 
+организовать треки, эффекты на них, оперировать параметрами треков, 
+включить - выключить отображение треков панели треков (TCP) и в микшере 
+(MCP)</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/wzjkfjvY9w.gif" alt="Track manager"></div>
+<hr>
+<h1 class="md__title md__title_first">Организация эффектов</h1>
+<div class="md__paragraph"><span class="md__strong">Добавление эффектов и роутинг</span></div>
+<div class="md__paragraph">Добавить эффект можно через FX браузер (Shift+F) - перетаскиваем нужный эффект на трек,</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/WcDOGiEt1N.gif" alt="Add FX Browser"></div>
+<div class="md__paragraph">либо открыть этот же браузер нажатием кнопки FX на треке либо в микшере.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/32YhO4wOd2.gif" alt="Add FX"></div>
+<div class="md__paragraph">Эффекты можно менять местами простым перетаскиванием.</div>
+<div class="md__paragraph">В браузере эффектов можно назначать горячие клавиши на добавление (ПК мыщи - Create Shortcut), переименовывать их -  Rename FX.</div>
+<div class="md__paragraph">Переименование так же доступно на  добавленных эффектах.</div>
+<div class="md__paragraph">Track Input FX - это эффект который сразу записывается в файл, его нельзя отменить после записи.</div>
+<div class="md__paragraph">Добавляемся аналогично но в слот in FX </div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/MX7oCT4hns.png" alt="2026-01-22_12-58-22"></div>
+<hr>
+<h1 class="md__title md__title_first">Создание и работа с шаблонами треков. Папки треков</h1>
+<h3 class="md__title md__title_third">Track Template</h3>
+<div class="md__paragraph"><span class="md__strong">Шаблон трэка</span> - сохраненные параметры трэка влючая эффекты, огибающие и данные на нем.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/XasT72rTMX.gif" alt="Track Template"></div>
+<div class="md__paragraph">Шаблоны существенно ускоряют организацию проекта и удобство в работе.</div>
+<h3 class="md__title md__title_third">Папки треков</h3>
+<div class="md__paragraph">Треки можно добавить в папки - Track Folders</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/z8LySnaDKi.gif" alt="Track Folders"></div>
+<hr>
+<h1 class="md__title md__title_first">Insert FX. Input FX. Send FX</h1>
+<div class="md__paragraph">Insert FX - эффект непосредственно на треке. Влияет на все содержимое трека,</div>
+<div class="md__paragraph">Input FX - эффект на входе трека, так же 
+добавляется на трек но сразу записывается в аудио файл, его нельзя 
+отменить или перенастроить после записи. </div>
+<div class="md__paragraph">Send FX -  эффект добавлется на другой трек, 
+сигнал посылается с одного либо нескольких треков на этот трек с 
+эффектом. Приимущество перед Insert FX  в том что разные треки могу быть
+ обработаны одним Send FX  с разной пропорцией.</div>
+<hr>
+<h1 class="md__title md__title_first">SideChain</h1>
+<div class="md__paragraph">Реализуется путем посыла сигнала (Send) на 
+трек с эффектом но на каналы 3/4 (по умолчанию), Если необходимо 
+использовать несоклько не зависимых Sidechain эффектов используем разные
+ каналы (например 3/4. 5/6. и тд)</div>
+<div class="md__paragraph">Чтобы конкретный эффект работал в режиме 
+SideChain нужно его настроить соответственно, например штатный 
+сомпрессор reacomp: его Detector Input нужно переключить в режим 
+Auxillary Inputs. Так дедектор компрессора будет слушать сигнал каналов 
+3/4 и реагировать именно на него.Reaper обладает уникальным роутингом 
+(маршрутизация сигнала), даже внутри трэка мы можем реализовать 
+микширование эффектов с различным уровнем и независимую обработку 
+последовательно установленных эффектов. (это очень ускоряет создание 
+SideChain (сайдчейн) цепей, дакинга, параллельной обработки и т.п.)</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/6689929882cf86e29d95b3e1ab61b7c5c9dd2d57.png" alt=""></div>
+<div class="md__paragraph">Реализация Send  FX - через меню Route либо просто перетаскиваем "сигнал"с одного канала на другой</div>
+<div class="md__paragraph">Если при этом выбрать каналы посыла 3/4 то по мы получил SideChain - боковой посыл сигнала.</div>
+<div class="md__paragraph">Эффект для работы в режиме SideChain должен быть в соответствуещем режиме (в Reacomp это Aux input)</div>
+<div class="md__paragraph">Небольшая видео памятка </div>
+<iframe src="Lesson%2003_files/1157254639_002.htm" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="width:1200;height:900;" title="Reaper Send Fx"></iframe>
+<div class="md__paragraph">Также удобно пользоваться матрицей Routing Matrix (Alt+R) для быстрой настройки коммутации.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/0aec4eed3024546e40bef92582166599c83226d5.png" alt=""></div>
+<div class="md__paragraph">Fx Chain это сохраненная как пресет цепочка эффектов:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/K3FLph3kxL.gif" alt="FX Chain"></div>
+<hr>
+<h1 class="md__title md__title_first">Настройка эффектов по умолчанию</h1>
+<div class="md__paragraph">Можно сохранить нужные эффекты которые будут сразу добавлятся на трек при его создании:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/gaMN7pFxtR.png" alt="2026-01-22_13-09-43"></div>
+<div class="md__paragraph">Чтобы вернуть добавление пустого трека нужно сохранить пустую цепь эффектов аналогичным образом.</div>
+<div class="md__paragraph">Также можно использовать Container - это по сути эффект в котором могут находиться другие эффекты:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/iuraIX6USc.gif" alt="Fx Container"></div>
+<hr>
+<h1 class="md__title md__title_first">Микшер (Mixer Control Panel (MCP))</h1>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/gZtY1w6h9b.png" alt="2026-01-26_16-52-24"></div>
+<div class="md__paragraph">1. Мастер канал</div>
+<div class="md__paragraph">2. Треки</div>
+<div class="md__paragraph">Чтобы вызвать окно микшера</div>
+<div class="md__list md__list_ordered">
+<div class="md__list-elem">View &gt; Mixer</div>
+<div class="md__list-elem">Ctrl + M</div>
+</div>
+<div class="md__paragraph">Удерживая CMD можно менять высоту слотов инсертов и посылов: </div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/uSL1XnL5Dw.gif" alt="Fx Slots"></div>
+<div class="md__paragraph"><span class="md__strong">I</span> - опции индикации мастер шины (ПК - на индикаторе мастер шины)</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/Tduq5r6r1v.jpg" alt="2026-01-26_16-59-51"></div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/1fc2971def4f6d9de4b8e9889fb2bdb9351aae2c.png" alt=""></div>
+<hr>
+<h1 class="md__title md__title_first">Item. Свойства, группировка</h1>
+<div class="md__paragraph">Свойства Item - если два раза кликнуть на аудио item мы попадаем в его свойства</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/eU9ZKWMznM.png" alt="2026-01-22_13-23-13"></div>
+<div class="md__paragraph">Высота звучания аудио Item - реализуется на лету либо через окно Media Item Properties (Pitch Adjust) (свойства Item)</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/02a2527702bee3b7ef5e9271ad77b5424dd15e38.png" alt=""></div>
+<div class="md__paragraph">В зависимости от аудио материала мы можем выбрать наиболее подходящий алгоритм.</div>
+<div class="md__paragraph">Для одноголосных источников рекомендуется режим elastique Pro 2.8 или 3 в режиме Solo.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/7ea5f644c550d74cc328d06a2ac71294aa8393b4.gif" alt=""></div>
+<div class="md__paragraph">Группировка параметров трека - Shift+G</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/Gnk6xNbKcv.gif" alt="Track Group"></div>
+<div class="md__paragraph">Группировка Items - выделить нужные и нажать G. Убрать из группы U</div>
+<div class="md__paragraph">Ускорение и замедление Item - удерживаем alt и тянем за начало или конец item:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/LFMYBO7qVS.gif" alt="Stretching Item"></div>
+<hr>
+<h1 class="md__title md__title_first">Варианты отображения Item</h1>
+<div class="md__paragraph">Можно выбрать варианты отображения Items на одном треке при пересечении:</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/BSdyMFk18C.gif" alt="Overlap item"></div>
+<div class="md__paragraph">Доступ к огибающим Item.</div>
+<div class="md__paragraph">ПКМ на Item попадаем в меню.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/39cfecbb0806b2c5bf6157b2cac116f0a675309f.gif" alt="image"></div>
+<div class="md__paragraph">Огибающие на Item FX работают также но отображаются на самом Item где находится управляемый эффект</div>
+<div class="md__paragraph"><span class="md__strong">Каналы Item</span></div>
+<div class="md__paragraph">Можно без дополнительно рендера оставлять 
+активными нужные каналы многоканальныйх файлов. Также можно разделить 
+каналы на независимые треки (action gen: explode multichannel Audio):</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2003_files/dGdBl275ia.gif" alt="ItemChannels"></div>
+    </div>
+</div>
+</body></html>
