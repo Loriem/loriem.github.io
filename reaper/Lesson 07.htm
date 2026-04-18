@@ -1,0 +1,246 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Занятие 7. Работа со звуком в Reaper</title>
+                    <link rel="stylesheet" href="Lesson%2007_files/main.4710.min.css"></head>
+    <body class="vsc-initialized">
+        <div class="wrapper">                                                                
+                <div class="content-wrapper page-wrapper page-wrapper--bottom">
+        <div class="title">Занятие 7. Работа со звуком в Reaper</div>
+        <h4 class="md__title md__title_fourth">Содержание</h4>
+<div class="md__list">
+<div class="md__list-elem">Подключение Midi устройств</div>
+<div class="md__list-elem">Создание MIDI Item. Piano Roll </div>
+<div class="md__list-elem">Quantize, Midi Loop - режимы и настройка</div>
+<div class="md__list-elem">Сэмплер ReaSamplOmatic5000 </div>
+<div class="md__list-elem">Мультиканальное подключение инструментов </div>
+<div class="md__list-elem">Автоматизация параметров треков и эффектов, модуляция параметров эффектов </div>
+<div class="md__list-elem">Automation Item.</div>
+<div class="md__list-elem">Запись автоматизации</div>
+<div class="md__list-elem">Кастомизация панелей и Toolbar</div>
+<div class="md__list-elem">Триггеринг. Dynamic Split. Конвертация аудио в MIDI </div>
+<div class="md__list-elem">Экспорт, эффективные настройки параметров</div>
+<div class="md__list-elem">Дополнительные материалы</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Подключение Midi устройств</h1>
+<div class="md__paragraph"><span class="md__strong">Миди контроллеры</span>
+ - midi клавиатуры, электронные барабаны, синтезаторы с миди выходом - 
+все что может генерировать и принимать миди данные. Интерфейс USB либо 
+DIN 5 коннектор</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/ce0ukvby7400w44kc4o0.png" alt="image"></div>
+<div class="md__paragraph">Подключаем в настройках в окне  Midi Devices</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/riuqzn8nn2ss0okoswco.png" alt="image"></div>
+<hr>
+<h1 class="md__title md__title_first">Создание MIDI Item. Piano Roll</h1>
+<div class="md__paragraph">Панель в которой происходит основная работа с миди данными  - Piano Roll (двойной клик на Midi Item)</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/67ll8o9972ww8ccs88oc.png" alt="image"></div>
+<div class="md__paragraph">Также можно активировать режим редактирования нажав E на выделенном Midi item</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/1582p6rjmakg0kkc8804.gif" alt="image"></div>
+<hr>
+<h1 class="md__title md__title_first">Quantize, Midi Loop - режимы и настройка</h1>
+<div class="md__paragraph">Quantize  (Q)- выравнивание партий</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/2yjvueeyf5a8sc4wgw4s.png" alt="image"></div>
+<div class="md__list">
+<div class="md__list-elem">1 - Ручная настройка либо квантовка по настройкам сетки Grid</div>
+<div class="md__list-elem">2 - Что именно квантуем
+<div class="md__list">
+<div class="md__list-elem">All notes - все ноты</div>
+<div class="md__list-elem">Selected Notes -  выбранные ноты</div>
+<div class="md__list-elem">All Events - все события Midi</div>
+<div class="md__list-elem">Selected Events - выбранные события</div>
+</div></div>
+<div class="md__list-elem">3 - степень применения квантовки (не всегда нужно 100% чтобы сохранить естественность исполнения)</div>
+<div class="md__list-elem">4 - параметры сетки для квантовки</div>
+<div class="md__list-elem">5 - параметр свинга</div>
+<div class="md__list-elem">6 - параметры привязки ноты (двигать влево, вправо, укорачивать, удлинять ) </div>
+<div class="md__list-elem">7 - Допустимый диапазон отклонения от сетки (что входит в него то квантуется)</div>
+</div>
+<div class="md__paragraph">Режим Loop Item Source работает не только с Midi но и с аудио материалом</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/seo0v04rzc0g40c0s44k.gif" alt="image"></div>
+<hr>
+<h1 class="md__title md__title_first">Сэмплер ReaSamplOmatic5000</h1>
+<div class="md__paragraph">В Reaper роль сэмплер выполняет ReaSamplOmatic5000</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/9c8domzc710ckwcgk8g0.png" alt="image"></div>
+<div class="md__list">
+<div class="md__list-elem">1 - уровень громкости</div>
+<div class="md__list-elem">2 - минимальное значение громкости</div>
+<div class="md__list-elem">3 - звучать начиная от ноты</div>
+<div class="md__list-elem">4 - звучать до ноты</div>
+<div class="md__list-elem">5 - сдвиг высоты исходного сэмпла</div>
+<div class="md__list-elem">6 - Атака</div>
+<div class="md__list-elem">7 - Релиз </div>
+<div class="md__list-elem">8 - номер миди канала</div>
+<div class="md__list-elem">9 - степень  "пропуска» нот (сэмплер намеренно не играет ноту и передает миди сообщение далее для следующего сэмплера)</div>
+<div class="md__list-elem">10 - замолкать когда нота перестает играть (учитывать снятие ноты)</div>
+<div class="md__list-elem">11 - максимальное значение Velocity миди ноты (например если нота со значением 120 и указано 119 то сэмпл не проиграется)</div>
+<div class="md__list-elem">12 - минимальное значение  Velocity миди ноты</div>
+<div class="md__list-elem">13 - диапазон допустимого изменения высоты исходного сэмпла</div>
+<div class="md__list-elem">14 - диапазон притча колеса Pitch</div>
+<div class="md__list-elem">15 - сустейн</div>
+<div class="md__list-elem">16 - максимальное количество голосов</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Мультиканальное подключение инструментов</h1>
+<div class="md__paragraph">При добавлении Kontakt или любого другого 
+многоканального инструмента Reaper  предложит подключить инструмент  в 
+многоканальном режиме</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/8kmrnc9irv4sskww440k.png" alt="image"></div>
+<div class="md__paragraph">Это позволяет независимо обрабатывать многоканальные инструменты</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/lke0g77ls1swkww8c080.gif" alt="image"></div>
+<div class="md__paragraph">Мультиканальное подключение также 
+рекомендуется для барабанов (одна инстанция, но из нее много выходов - 
+свой для каждого барабана), при это сама миди партия может находится как
+ на одной дорожке так и на разных (кому как удобнее).</div>
+<h1 class="md__title md__title_first">Автоматизация параметров треков и эффектов</h1>
+<div class="md__paragraph">В Reaper автоматизировать можно огромное 
+количество параметров трека, эффектов на треке, посылов и возвратов на 
+любом треке, параметров Item и даже параметров эффекта на Item! </div>
+<div class="md__paragraph">Доступ к автоматизации параметров трека</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/b307e8e174bf62083d9c375e405e0bad01659f6d.gif" alt="image"></div>
+<div class="md__paragraph">Удобно использовать горячие клавиши V - огибающая громкости трека, P - панорамы трека.</div>
+<div class="md__paragraph">Огибающие можно редактировать карандашом, 
+который активируется CMD -мы просто удерживаем CMD и рисуем нужный 
+параметр, создаются «ключевые точки»</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/70b5f92938a59564a133e6de996c2208dba73a46.gif" alt="image"></div>
+<div class="md__paragraph">Можно поместить огибающий на трек, временно 
+отключить (Bypass) удалить или вовсе спрятать (Hide )(при этот они будут
+ работать) - операции для редактирования доступны нажатием ПКМ на 
+огибающей.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/8523a3807d7ec781d02fad7a4e1c2373809ac57d.gif" alt="image"></div>
+<div class="md__paragraph">Команда Clear  -  удаляет огибающую с трека.</div>
+<div class="md__paragraph">Доступ к огибающий плагина на треке можно получить и первым способом - при этом нам открываются параметры эффекта.</div>
+<div class="md__paragraph">Но так как искать нужный параметр из десятков не совсем удобно, есть другой вариант!</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/680fdb962fedb8b8fdfc7dcbe214556b8f0dfde1.gif" alt="image"></div>
+<div class="md__paragraph">И еще один вариант просто кликнуть на нужном параметре и из того же меню Param выбрать Show envelope.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/c64f264ad848355a047ecc92c1b53b048565178f.gif" alt="image"></div>
+<div class="md__paragraph">Тем же способом мы можем добавить нужный параметр в виде «крутилки» прямо на трек.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/9303bab9746738433ca7d275445ac1ac30bed25c.gif" alt="image"></div>
+<div class="md__paragraph">Доступ к огибающим Item.</div>
+<div class="md__paragraph">ПКМ на Item попадаем в меню.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/39cfecbb0806b2c5bf6157b2cac116f0a675309f.gif" alt="image"></div>
+<div class="md__paragraph">Огибающие на Item FX работают также но отображаются на самом Item где находится управляемый эффект</div>
+<div class="md__list">
+<div class="md__list-elem">За SideChain по умолчанию отвечают каналы 3/4 </div>
+<div class="md__list-elem">Их необходимо выбрать при посыле сигнала на 
+плагин, либо просто «перетаскивать» сигнал сразу на плагин, тогда каналы
+ 3/4 будут выбраны автоматически</div>
+</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/0649f72b7523cba6bd9cd370b95c7d181e015013.gif" alt="image"></div>
+<div class="md__list">
+<div class="md__list-elem">Можно модулировать любой параметр аудио сигналом либо генератором LFO</div>
+<div class="md__list-elem">Например частота EQ будет меняться в зависимости от громкости аудиосигнала(это избавит от рисования огибающих как вариант)</div>
+</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/7923fce78a72b120183aa684b65373e6c104999d.gif" alt="image"></div>
+<hr>
+<h1 class="md__title md__title_first">Запись автоматизации</h1>
+<div class="md__paragraph">Доступны все возможные режимы записи огибающей (записывается движение фейдера, ручки эффекта и т.д.)</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/1ea66212f5e4c1e8926f5c8857716387a64157ab.gif" alt="image"></div>
+<div class="md__list">
+<div class="md__list-elem"><span class="md__strong">Trim/Read</span> - чтение огибающей с возможностью глобально изменить уровень (trim)</div>
+<div class="md__list-elem"><span class="md__strong">Read</span> - только чтение</div>
+<div class="md__list-elem"><span class="md__strong">Touch</span> - записываются только изменения (только обновление значений фейдера)</div>
+<div class="md__list-elem"><span class="md__strong">Latch</span>  - записывается с текущего положения и сохраняется на последнем значении</div>
+<div class="md__list-elem"><span class="md__strong">Write</span> - полностью перезаписывает текущее значение новыми данными, не зависимо от того меняем мы значение или нет</div>
+</div>
+<hr>
+<h1 class="md__title md__title_first">Automation Item (Айтем автоматизации)</h1>
+<div class="md__paragraph">Можем создать Automation Item для управления определенной огибающей. </div>
+<div class="md__paragraph">По сути это пресет для огибающей, его как и обычный Item можно сохранить, загрузить и использовать на других огибающих. </div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/IV2Z86x1ih.jpg" alt="Automation Item"></div>
+<h1 class="md__title md__title_first">Кастомизация панелей и Toolbar</h1>
+<div class="md__paragraph">в Reaper доступны 17 основных Toolbar и 9 
+Midi - абсолютно все из них мы можем кастомизировать - добавлять 
+иконки-Actions, причем не только базовые но и дополнительные Actions.</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/c63c769a168474b6fd89c36d8594b2f20781dac1.png" alt="image"></div>
+<div class="md__list">
+<div class="md__list-elem"><span class="md__strong">Switch toolbar</span> - переключение на выбранный тулбар</div>
+<div class="md__list-elem"><span class="md__strong">Open toolbar</span> - открыть тулбар</div>
+<div class="md__list-elem"><span class="md__strong">Position toolbar</span> - расположение тулбара (докер)</div>
+<div class="md__list-elem">Показать/скрыть окно <span class="md__strong">Toolbar Docker</span> (вкладка содержащая в себе несколько toolbar) - горячая клавиша F</div>
+</div>
+<div class="md__paragraph">Добавим на основной Toolbar какой либо Action</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/2bc1364f3cca9f83d12850adf1b0f27b11579a36.gif" alt="image"></div>
+<div class="md__paragraph">Сами кнопки (иконки) можно менять, они 
+находятся в директории Reaper  - Data (/Users/admin/Library/Application 
+Support/REAPER/Data) в папке toolbar_icons,
+Чтобы не запоминать где эта папка удобнее ее открывать через меню 
+Options - Show Reaper resource...</div>
+<div class="md__paragraph">Расположение и очередность иконок можно менять простым перетаскиванием.</div>
+<div class="md__paragraph">Создадим свой Action (например Action который будет добавлять выбранный эффект на трек)</div>
+<div class="md__paragraph">1 необходимо расширение SWS</div>
+<div class="md__paragraph">2 вызываем консоль, Extensions - Cycle Action
+ Editor и правой кнопкой добавляем слот для нашего  Action (сразу можно 
+вписать имя)</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/f971fd1c425b14a4437a1cbe626dea3d76c89ff1.gif" alt="image"></div>
+<div class="md__paragraph">3 в правой части окна правой кнопкой 
+добавляем команду, после слова CONSOLE дописываем -x и название эффекта 
+который хотим использовать (название копируем также как плагин 
+называется в списке эффектов) после x(перед названием плагина) 
+обязательно ставим пробел</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/36a9ea2a7fe117c8ac3d5e40798657b81c9c3a2e.gif" alt="image"></div>
+<div class="md__paragraph">4 Добавляем Action (Show fx chain)который 
+будет открывать интерфейс эффекта (добавляться сам плагин будет без 
+этого Action, но логично сразу после добавления настроить эффект)</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/728c914fa98b2451866e1539d369eca7d1576be2.gif" alt="image"></div>
+<div class="md__paragraph">5 теперь можно создать кнопку  при нажатии на которую у нас будет запускаться наш Action</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/4f289ebe2ed841193947454d66602ce906a348a9.gif" alt="image"></div>
+<div class="md__paragraph">Таким образом можно создать свою индивидуальную панель инструментов</div>
+<div class="md__paragraph">Также можно назначать на кнопку определенный Fx Chain</div>
+<div class="md__list md__list_ordered">
+<div class="md__list-elem">1. Сохраняем нужный FX Chain</div>
+<div class="md__list-elem">2. Идем в SWS Extension  рвздел Resources и добавляем там в любой слот созданный Fx Chain, запомнив номер слота</div>
+<div class="md__list-elem">3. Создаем кнопку на Toolbar и в списке Action назначаем на нее экшн Resources - Paste FX chain to selected track slot</div>
+<div class="md__list-elem">4. После слова slot выбираем тот номер на котором у нас создан нужный FX Chain
+По умолчанию количество слотов ограниченно до 8 но мы можем вбить нужное значение в строке
+S&amp;M_PASTE_TRACKFXCHAIN файла S&amp;M.ini, который находиться в папке ресурсов reaper.</div>
+</div>
+<iframe src="Lesson%2007_files/175883674_002.htm" allowfullscreen=""></iframe>
+<div class="md__paragraph">Reaper - Align Takes</div>
+<hr>
+<h1 class="md__title md__title_first">Триггеринг.Конвертация аудио в MIDI</h1>
+<div class="md__list">
+<div class="md__list-elem">Практическая работа с ударными, выравнивание,замена звуков (триггирование)</div>
+</div>
+<div class="md__paragraph">При выравнивании трекинга ударных желательно 
+объединить items  в группу - это сохранит газировку между треками и 
+упростит создание стретч маркеров - достаточно установить его на одном 
+item группы  - в том же месте будут установлены маркеры на всех items 
+группы.</div>
+<div class="md__paragraph">В качестве существенного улучшения звука 
+используется технология замены оригинального звука либо подмешивания 
+сэмплов к исходным трекам - например бас бочку можно заменить сэмплов 
+более качественного барабана, записанного в хорошей студии.</div>
+<div class="md__paragraph">Триггеров в Reaper является JS: Audio To MIDI
+ Drum Trigger - получая аудио сигнал он генерирует (конвертирует) аудио 
+данные в midi сообщения(миди ноты).</div>
+<div class="md__paragraph"><img class="md__img" src="Lesson%2007_files/ee86dcd2d3f3ac2a7160d3c27b081330a2238d18.png" alt="image"></div>
+<div class="md__list">
+<div class="md__list-elem">1.  - порог открытия (уровень когда триггер «слышит» сигнал и генерирует ноту)</div>
+<div class="md__list-elem">2. - порог закрытия</div>
+<div class="md__list-elem">3. - время между сигналами (нотами)триггера</div>
+<div class="md__list-elem">4. - уровень оригинального сигнала</div>
+<div class="md__list-elem">5. - номер миди канала</div>
+<div class="md__list-elem">6. - номер миди ноты</div>
+<div class="md__list-elem">7. - время определения пика сигнала</div>
+<div class="md__list-elem">8. - сдвиг полученной миди ноты (часто применяется чтобы подружить фазу оригинала и сэмпла)</div>
+</div>
+<div class="md__paragraph"><span class="md__em">Совет - перед триггером 
+можно установить EQ чтобы сформировать только нужный частотный диапазон 
+тиражируемого инструмента - это существенно может повысить точность и 
+упростить настройку порогов Threshold.</span></div>
+<hr>
+<hr>
+<h4 class="md__title md__title_fourth">Дополнительные материалы</h4>
+<div class="md__paragraph">Конвертер Audio в Midi в Reaper</div>
+<iframe width="560" height="315" src="Lesson%2007_files/WY6Vx078WBo.htm" frameborder="0" allowfullscreen=""></iframe>
+<div class="md__paragraph"><br><br>Reaper - Align Takes</div>
+<iframe width="560" height="315" src="Lesson%2007_files/175883674_002.htm" allowfullscreen=""></iframe>
+<div class="md__paragraph"><br><br>Reaper - Vox Deeser</div>
+<iframe width="560" height="315" src="Lesson%2007_files/175883705.htm" allowfullscreen=""></iframe>
+<div class="md__paragraph"><br><br>Reaper - скрипт Manipulate Take Volume (SPK77)</div>
+<iframe width="560" height="315" src="Lesson%2007_files/09eLbpwgROM.htm" frameborder="0" allowfullscreen=""></iframe>
+<div class="md__paragraph"><br><br>Reaper Sub (субтитры)</div>
+<iframe width="560" height="315" src="Lesson%2007_files/1105048455.htm" allowfullscreen=""></iframe>
+    </div>
+</div>
+</body></html>
